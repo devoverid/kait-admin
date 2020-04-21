@@ -1,0 +1,11 @@
+.badge {
+    @apply bg-gray-400 rounded-md px-2 text-sm box-border py-1 table-cell;
+    
+    @each $color, $map in $badge {
+        &.badge-#{$color} {
+            color: map-get($map, "color");
+            background-color: map-get($map, "background-color");
+        }
+    }
+}
+

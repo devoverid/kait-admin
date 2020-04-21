@@ -1,0 +1,27 @@
+.table-responsive {
+    @apply w-full ;
+}
+.table {
+    @apply w-full table-auto border-collapse;
+    
+    &.table-striped {
+        thead {
+            tr {
+                th {
+                    background-color: rgb(227, 232, 238);
+                    @apply text-left  px-4 py-2 text-gray-700 
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    @apply border px-4 py-2 text-gray-700;
+                }
+                &:nth-child(odd) {
+                    @apply bg-gray-100
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.sidebar-wrapper {
+    width: 270px;
+    @apply h-screen shadow-lg absolute top-0 left-0 bg-white;
+    .sidebar-header {
+        @apply my-8;
+        .logo {
+            img {
+                @apply h-16 mx-auto w-24
+            }
+        }
+    }
+    .sidebar-menu {
+        ul {
+            li {
+                a {
+                    @apply block px-5 py-3 font-normal text-gray-800 text-sm;
+                    letter-spacing:1px;
+                    color: #4c4f53;;
+                    &:hover {
+                        @apply text-blue-700 transition duration-150
+                    }
+                    i {
+                        width: 20px;
+                        text-align: right;
+                    }
+                    span {
+                        @apply ml-4
+                    }
+                }
+            }
+        }
+    }
+}

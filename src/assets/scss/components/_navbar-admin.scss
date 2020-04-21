@@ -1,0 +1,22 @@
+.navbar-bg {
+    background: linear-gradient(120deg, #0ca6e2, #424191);
+    height: 200px;
+    z-index: -2;
+    @apply absolute top-0 left-0 w-full;
+}
+.navbar {
+    @apply px-4 py-3 flex justify-between;
+    .navbar-toggle .btn {
+        @apply text-blue-200 text-2xl transition duration-150 p-3;
+        
+        &:hover {
+            @apply text-blue-100;
+        }
+    }
+    .avatar {
+        @apply px-4 py-3
+    }
+    .avatar img{
+        @apply rounded-full w-10 h-10 
+    }
+}

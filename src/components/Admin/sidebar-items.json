@@ -1,0 +1,22 @@
+[
+    {
+        "text": "Dashboard",
+        "icon": "fas fa-home",
+        "url": "/admin"
+    },
+    {
+        "text": "Users",
+        "icon": "fas fa-users",
+        "url": "/admin/users"
+    },
+    {
+        "text": "Exams",
+        "icon": "fas fa-book",
+        "url": "/admin/exam"
+    },
+    {
+        "text": "Settings",
+        "icon": "fas fa-cog",
+        "url": "/admin/exam"
+    }
+]

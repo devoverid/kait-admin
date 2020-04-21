@@ -1,0 +1,11 @@
+#app {
+    @apply overflow-x-hidden
+}
+#content {
+    padding-left: 270px;   
+    @apply w-full  min-h-screen;
+
+    .main-content {
+        @apply px-8 mt-12
+    }
+}

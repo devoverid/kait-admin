@@ -1,0 +1,155 @@
+
+$theme-colors: (
+  'primary': #2c86f5,
+  'secondary': #ced6e0,
+  'success': #10ac84,
+  'danger': #e03f3f,
+  'warning': #ff9f43,
+  'info': #0abde3,
+  'dark': #222f3e,
+  'light': #efefef
+);
+
+$badge: (
+	'success': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'success'),
+	)
+);
+
+$alerts: (
+	"primary": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'primary'),
+		"border-color": #2f81e6,
+	),
+	"secondary": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'secondary'),
+		"border-color": #fff,
+	),
+	"success": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'success'),
+		"border-color": #fff,
+	),
+	"danger": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'danger'),
+		"border-color": #fff,
+	),
+	"warning": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'warning'),
+		"border-color": #fff,
+	),
+	"info": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'info'),
+		"border-color": #fff,
+	),
+	"dark": (
+		"color": #fff,
+		"background-color": map-get($theme-colors, 'dark'),
+		"border-color": #fff,
+	),
+	"light": (
+		"color": #222,
+		"background-color": map-get($theme-colors, 'light'),
+		"border-color": #fff,
+	),
+);
+
+
+$buttons: (
+	'primary': (
+		"color": #eee,
+		"background-color": map-get($theme-colors, 'primary'),
+		"background-color-hover": #0a7cd3,
+		"box-shadow": 2px 3px 10px rgba(48, 128, 227, .4),
+		"box-shadow-hover": 2px 3px 10px rgba(48, 128, 227, .7),
+	),
+	'secondary': (
+		"color": #eee,
+		"background-color": #7f848a,
+		"background-color-hover": rgb(134, 141, 150),
+		"box-shadow": 2px 3px 10px rgba(100, 100, 100, .4),
+		"box-shadow-hover": 2px 3px 10px rgba(100, 100, 100, .7),
+	),
+	'success': (
+		"color": #eee,
+		"background-color": #10ac84,
+		"background-color-hover": #0b9270,
+		"box-shadow": 2px 3px 10px rgba(11, 148, 114, .4),
+		"box-shadow-hover": 2px 3px 10px rgba(14, 170, 131, 0.7),
+	),
+	'danger': (
+		"color": #eee,
+		"background-color": #e03f3f,
+		"background-color-hover": #c73535,
+		"box-shadow": 2px 3px 10px rgba(199, 47, 47,.4),
+		"box-shadow-hover": 2px 3px 10px rgba(199, 47, 47, .7),
+	),
+	'warning': (
+		"color": #eee,
+		"background-color": #ff9f43,
+		"background-color-hover": #ec9039,
+		"box-shadow": 2px 3px 10px rgba(230, 131, 40, 0.4),
+		"box-shadow-hover": 2px 3px 10px rgba(230, 131, 40, 0.7),
+	),
+	'info': (
+		"color": #eee,
+		"background-color": #0abde3,
+		"background-color-hover": #09afd4,
+		"box-shadow": 2px 3px 10px rgba(14, 166, 201, .4),
+		"box-shadow-hover": 2px 3px 10px rgba(14, 166, 201, .7),
+	),
+	'dark': (
+		"color": #eee,
+		"background-color": #222f3e,
+		"background-color-hover": #1a2430,
+		"box-shadow": 2px 3px 10px rgba(34, 47, 62,.4),
+		"box-shadow-hover": 2px 3px 10px rgba(34, 47, 62,.7),
+	),
+	'light': (
+		"color": #eee,
+		"background-color": #efefef,
+		"background-color-hover": #ececec,
+		"box-shadow": 2px 3px 10px rgba(220, 220, 220,.4),
+		"box-shadow-hover": 2px 3px 10px rgba(220, 220, 220,.7),
+	)
+);
+
+$outline-buttons: (
+  "primary-outline-border": map-get($theme-colors, 'primary'),
+  "primary-outline-text": map-get($theme-colors, 'primary'),
+  "primary-outline-hover-bg": map-get($theme-colors, 'primary'),
+
+  "secondary-outline-border": map-get($theme-colors, 'secondary'),
+  "secondary-outline-text": map-get($theme-colors, 'secondary'),
+  "secondary-outline-hover-bg": map-get($theme-colors, 'secondary'),
+
+  "success-outline-border": map-get($theme-colors, 'success'),
+  "success-outline-text": map-get($theme-colors, 'success'),
+  "success-outline-hover-bg": map-get($theme-colors, 'success'),
+
+  "danger-outline-border": map-get($theme-colors, 'danger'),
+  "danger-outline-text": map-get($theme-colors, 'danger'),
+  "danger-outline-hover-bg": map-get($theme-colors, 'danger'),
+
+  "warning-outline-border": map-get($theme-colors, 'warning'),
+  "warning-outline-text": map-get($theme-colors, 'warning'),
+  "warning-outline-hover-bg": map-get($theme-colors, 'warning'),
+
+  "info-outline-border": map-get($theme-colors, 'info'),
+  "info-outline-text": map-get($theme-colors, 'info'),
+  "info-outline-hover-bg": map-get($theme-colors, 'info'),
+
+  "dark-outline-border": map-get($theme-colors, 'dark'),
+  "dark-outline-text": map-get($theme-colors, 'dark'),
+  "dark-outline-hover-bg": map-get($theme-colors, 'dark'),
+
+  "light-outline-border": map-get($theme-colors, 'light'),
+  "light-outline-text": map-get($theme-colors, 'light'),
+  "light-outline-hover-bg": map-get($theme-colors, 'light'),
+);

@@ -1,0 +1,12 @@
+.card {
+    @apply shadow-lg; 
+    .card-header {
+        @apply bg-white p-5 rounded-t-md font-bold text-gray-700
+    }
+    .card-body {
+        @apply px-5 py-4;
+    }
+    .card-description {
+        @apply bg-white  text-gray-600 tracking-wide mb-4;
+    }
+}
