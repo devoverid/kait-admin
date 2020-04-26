@@ -12,16 +12,21 @@ Table of contents
 2. Components
   2.1 Card
   2.2 Button
-
+3. Plugins
+  3.1 Nprogress
+4. Responsive
 */
 
 /* 1. Layout */
 @import './custom/structure/layout-admin';
+@import './custom/miscellaneous';
 /* 1.1 Sidebar */
 @import './components/sidebar';
 /* 1.1 Navbar */
 @import './components/navbar-admin';
 
+/* 2.1 Alert */
+@import './components/alert';
 /* 2.1 Card */
 @import './components/card';
 /* 2.2 Button */
@@ -30,5 +35,12 @@ Table of contents
 @import './components/table';
 /* 2.4 Badge */
 @import './components/badge';
+
+
+/* 3.1 Nprogress */
+@import './plugins/progress/nprogress';
+
+/* 4. Responsive */
+@import './responsive'
 
 

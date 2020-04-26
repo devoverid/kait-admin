@@ -7,14 +7,43 @@ $theme-colors: (
   'warning': #ff9f43,
   'info': #0abde3,
   'dark': #222f3e,
-  'light': #efefef
+  'light': #efefef,
+  'link': #2178d1
 );
 
 $badge: (
+	'primary': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'primary'),
+	),
+	'secondary': (
+		'color': #fff,
+		'background-color': #bec8d1,
+	),
 	'success': (
 		'color': #fff,
 		'background-color': map-get($theme-colors, 'success'),
-	)
+	),
+	'danger': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'danger'),
+	),
+	'warning': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'warning'),
+	),
+	'info': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'info'),
+	),
+	'dark': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'dark'),
+	),
+	'light': (
+		'color': #333,
+		'background-color': map-get($theme-colors, 'light'),
+	),
 );
 
 $alerts: (
@@ -65,58 +94,58 @@ $buttons: (
 	'primary': (
 		"color": #eee,
 		"background-color": map-get($theme-colors, 'primary'),
-		"background-color-hover": #0a7cd3,
-		"box-shadow": 2px 3px 10px rgba(48, 128, 227, .4),
-		"box-shadow-hover": 2px 3px 10px rgba(48, 128, 227, .7),
+		"background-color-hover": #1169d6,
+		"box-shadow": 1px 3px 8px rgba(48, 128, 227, .4),
+		"box-shadow-hover": 1px 3px 8px rgba(48, 128, 227, .7),
 	),
 	'secondary': (
 		"color": #eee,
 		"background-color": #7f848a,
-		"background-color-hover": rgb(134, 141, 150),
-		"box-shadow": 2px 3px 10px rgba(100, 100, 100, .4),
-		"box-shadow-hover": 2px 3px 10px rgba(100, 100, 100, .7),
+		"background-color-hover": #63666b,
+		"box-shadow": 1px 3px 8px rgba(100, 100, 100, .4),
+		"box-shadow-hover": 1px 3px 8px rgba(100, 100, 100, .7),
 	),
 	'success': (
 		"color": #eee,
 		"background-color": #10ac84,
 		"background-color-hover": #0b9270,
-		"box-shadow": 2px 3px 10px rgba(11, 148, 114, .4),
-		"box-shadow-hover": 2px 3px 10px rgba(14, 170, 131, 0.7),
+		"box-shadow": 1px 3px 8px rgba(11, 148, 114, .4),
+		"box-shadow-hover": 1px 3px 8px rgba(14, 170, 131, 0.7),
 	),
 	'danger': (
 		"color": #eee,
 		"background-color": #e03f3f,
 		"background-color-hover": #c73535,
-		"box-shadow": 2px 3px 10px rgba(199, 47, 47,.4),
-		"box-shadow-hover": 2px 3px 10px rgba(199, 47, 47, .7),
+		"box-shadow": 1px 3px 8px rgba(199, 47, 47,.4),
+		"box-shadow-hover": 1px 3px 8px rgba(199, 47, 47, .7),
 	),
 	'warning': (
 		"color": #eee,
 		"background-color": #ff9f43,
 		"background-color-hover": #ec9039,
-		"box-shadow": 2px 3px 10px rgba(230, 131, 40, 0.4),
-		"box-shadow-hover": 2px 3px 10px rgba(230, 131, 40, 0.7),
+		"box-shadow": 1px 3px 8px rgba(230, 131, 40, 0.4),
+		"box-shadow-hover": 1px 3px 8px rgba(230, 131, 40, 0.7),
 	),
 	'info': (
 		"color": #eee,
 		"background-color": #0abde3,
 		"background-color-hover": #09afd4,
-		"box-shadow": 2px 3px 10px rgba(14, 166, 201, .4),
-		"box-shadow-hover": 2px 3px 10px rgba(14, 166, 201, .7),
+		"box-shadow": 1px 3px 8px rgba(14, 166, 201, .4),
+		"box-shadow-hover": 1px 3px 8px rgba(14, 166, 201, .7),
 	),
 	'dark': (
 		"color": #eee,
 		"background-color": #222f3e,
 		"background-color-hover": #1a2430,
-		"box-shadow": 2px 3px 10px rgba(34, 47, 62,.4),
-		"box-shadow-hover": 2px 3px 10px rgba(34, 47, 62,.7),
+		"box-shadow": 1px 3px 8px rgba(34, 47, 62,.4),
+		"box-shadow-hover": 1px 3px 8px rgba(34, 47, 62,.9),
 	),
 	'light': (
-		"color": #eee,
+		"color": #555,
 		"background-color": #efefef,
-		"background-color-hover": #ececec,
-		"box-shadow": 2px 3px 10px rgba(220, 220, 220,.4),
-		"box-shadow-hover": 2px 3px 10px rgba(220, 220, 220,.7),
+		"background-color-hover": #dedede,
+		"box-shadow": 1px 3px 8px rgba(220, 220, 220,.4),
+		"box-shadow-hover": 1px 3px 8px rgba(220, 220, 220,.7),
 	)
 );
 

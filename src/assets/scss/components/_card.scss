@@ -1,12 +1,15 @@
 .card {
-    @apply shadow-lg; 
+    @apply shadow-xl border border-gray-100 rounded-t-md; 
     .card-header {
         @apply bg-white p-5 rounded-t-md font-bold text-gray-700
     }
     .card-body {
-        @apply px-5 py-4;
+        @apply px-5 py-4 bg-white;
     }
     .card-description {
         @apply bg-white  text-gray-600 tracking-wide mb-4;
+    }
+    & + .card {
+        @apply mt-5
     }
 }

@@ -1,18 +1,157 @@
 [
     {
+        "type": "title",
+        "text": "Main Menu"
+    },
+    {
         "text": "Dashboard",
         "icon": "fas fa-home",
-        "url": "/admin"
+        "url": "/"
     },
     {
-        "text": "Users",
-        "icon": "fas fa-users",
-        "url": "/admin/users"
+        "text": "Components",
+        "icon": "fas fa-th-large",
+        "active": false,    
+        "submenu": [
+            {
+                "text": "Alert",
+                "url": "/components/alert"
+            },
+            {
+                "text": "Badge",
+                "url": "/components/badge"
+            },
+            {
+                "text": "Buttons",
+                "url": "/components/buttons"
+            },
+            {
+                "text": "Card",
+                "url": "/components/card"
+            },
+            {
+                "text": "Dropdown",
+                "url": "/components/dropdown"
+            },
+            {
+                "text": "Form",
+                "url": "/components/form"
+            },
+            {
+                "text": "List Group",
+                "url": "/components/list-group"
+            },
+            {
+                "text": "Modal",
+                "url": "/components/modal"
+            },
+            {
+                "text": "Pagination",
+                "url": "/components/pagination"
+            },
+            {
+                "text": "Progress",
+                "url": "/components/progress"
+            }
+        ]
     },
     {
-        "text": "Exams",
-        "icon": "fas fa-book",
-        "url": "/admin/exam"
+        "text": "Forms",
+        "icon": "far fa-file-alt",
+        "submenu": [
+            {
+                "text": "Advanced Form",
+                "url": "/form/advanced-form"
+            },
+            {
+                "text": "Editor",
+                "url": "/form/editor"
+            },
+            {
+                "text": "Validation",
+                "url": "/form/validation"
+            }
+        ]
+    },
+    {
+        "text": "Tables",
+        "icon": "fas fa-table",
+        "submenu": [
+            {
+                "text": "Table",
+                "url": "/form/advanced-form"
+            },
+            {
+                "text": "DataTables",
+                "url": "/form/editor"
+            }
+        ]
+    },
+    {
+        "text": "Modules",
+        "icon": "fas fa-plug",
+        "submenu": [
+            {
+                "text": "ChartJS",
+                "url": "/modules/chartjs"
+            },
+            {
+                "text": "Font Awesome",
+                "url": "/modules/font-awesome"
+            },
+            {
+                "text": "Sweet Alert",
+                "url": "/modules/sweet-alert"
+            },
+            {
+                "text": "Waves Effect",
+                "url": "/modules/waves"
+            }
+        ]
+    },
+    {
+        "type": "title",
+        "text": "Pages"
+    },
+    {
+        "text": "Authentication",
+        "icon": "far fa-user",
+        "submenu": [
+            {
+                "text": "Login",
+                "url": "/auth/login"
+            },
+            {
+                "text": "Register",
+                "url": "/auth/register"
+            },
+            {
+                "text": "Forgot Password",
+                "url": "/auth/forgot-password"
+            }
+        ]
+    },
+    {
+        "text": "Errors",
+        "icon": "fas fa-exclamation",
+        "submenu": [
+            {
+                "text": "401",
+                "url": "/error/401"
+            },
+            {
+                "text": "403",
+                "url": "/error/403"
+            },
+            {
+                "text": "404",
+                "url": "/error/404"
+            },
+            {
+                "text": "500",
+                "url": "/error/500"
+            }
+        ]
     },
     {
         "text": "Settings",

@@ -1,0 +1,4 @@
+#nprogress .bar {
+    background: map-get($theme-colors, 'info') !important;
+    height: 3px;
+}

@@ -1,0 +1,22 @@
+.alert {
+    @apply px-4 py-3 mb-3 rounded-md shadow-md text-sm relative;
+    border:none;
+    .alert-title {
+        @apply text-xl font-medium mb-2;
+    }
+    &.alert-dismissable .close {
+        @apply  absolute right-0 top-0 bottom-0 px-4 font-bold text-lg;
+        color: rgba(255,255,255,.5)
+    }
+    i {
+        @apply mr-1 text-xs;
+    }
+}
+
+@each $color, $map in $alerts {
+    .alert-#{$color} {
+        color: map-get($map, "color");
+        background-color: rgba(map-get($map, "background-color"), .8);
+        border-color: map-get($map, "border-color");
+    }
+}

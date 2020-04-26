@@ -4,7 +4,9 @@
         <div class="navbar-bg"></div>
         <div id="content">
             <kait-navbar/>
-            <router-view/>
+            <vue-page-transition name="fade-in-right">
+                <router-view/>
+            </vue-page-transition>
         </div>
     </div>
 </template>

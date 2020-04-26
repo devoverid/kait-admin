@@ -1,19 +1,19 @@
 .btn {
-    @apply px-3 py-2 rounded-md transition duration-100;
+    @apply px-3 py-2 rounded-sm transition duration-200 font-medium text-sm;
     @each $color, $map in $buttons {
         &.btn-#{$color} {
             background: map-get($map, 'background-color'); 
-            box-shadow: map-get($map, "box-shadow-#{$color}");
+            box-shadow: map-get($map, "box-shadow");
             &:active:hover, &:hover:not([disabled]) {
                 background: map-get($map, "background-color-hover"); 
-                box-shadow: map-get($map, "box-shadow-#{$color}-hover");
+                box-shadow: map-get($map, "box-shadow-hover");
             }
             color: map-get($map, "color");
         }
     }
-    & + .btn {
-        @apply mx-2;
-    }
+    
 }
 
-
+.buttons .btn {
+    @apply mr-3
+}
