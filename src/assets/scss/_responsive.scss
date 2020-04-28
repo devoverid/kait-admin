@@ -38,7 +38,7 @@
     .col-xl-11 { @apply w-11/12 }
     .col-xl-12 { @apply w-full }
 }
-@screen lg {
+@media screen and (max-width: 1199px) {
     .col-lg-1 { @apply w-1/12 }
     .col-lg-2 { @apply w-1/6 }
     .col-lg-3 { @apply w-1/4 }

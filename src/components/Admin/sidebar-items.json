@@ -78,8 +78,8 @@
         "icon": "fas fa-table",
         "submenu": [
             {
-                "text": "Table",
-                "url": "/form/advanced-form"
+                "text": "Basic Table",
+                "url": "/table/basic"
             },
             {
                 "text": "DataTables",

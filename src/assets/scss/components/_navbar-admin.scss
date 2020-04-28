@@ -1,8 +1,9 @@
 .navbar-bg {
-    background: linear-gradient(120deg, #0ca6e2, #424191);
+    background: linear-gradient(120deg, #396afc, #2948ff);
+    // background: linear-gradient(120deg, #0ca6e2, #424191);
     height: 270px;
     z-index: -2;
-    @apply absolute top-0 left-0 w-full;
+    @apply absolute top-0 left-0 right-0 w-full;
 }
 .navbar {
     @apply px-4 py-3 flex justify-between;

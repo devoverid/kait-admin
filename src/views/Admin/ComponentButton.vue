@@ -30,26 +30,47 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">Variation</div>
+                    <div class="card-header">Default</div>
                     <div class="card-body">
-                        <div class="badges">
-                            <span class="badge badge-primary">Primary</span>
-                            <span class="badge badge-secondary">Secondary</span>
-                            <span class="badge badge-success">Success</span>
-                            <span class="badge badge-danger">Danger</span>
-                            <span class="badge badge-warning">Warning</span>
-                            <span class="badge badge-info">Info</span>
-                            <span class="badge badge-light">Light</span>
-                            <span class="badge badge-dark">Dark</span>
-                        </div>
+                            <div class="buttons">
+                                <button type="button" class="btn btn-primary"><i class="fas fa-check-circle"></i> Primary</button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-check-circle"></i> Secondary</button>
+                                <button type="button" class="btn btn-success"><i class="fas fa-check-circle"></i> Success</button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-check-circle"></i> Danger</button>
+                                <button type="button" class="btn btn-warning"><i class="fas fa-check-circle"></i> Warning</button>
+                                <button type="button" class="btn btn-info"><i class="fas fa-check-circle"></i> Info</button>
+                                <button type="button" class="btn btn-light"><i class="fas fa-check-circle"></i> Light</button>
+                                <button type="button" class="btn btn-dark"><i class="fas fa-check-circle"></i> Dark</button>
+
+                                <button type="button" class="btn btn-link"><i class="fas fa-check-circle"></i> Link</button>
+                            </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-12">
                 <div class="card">
-                    <div class="card-header">Buttons</div>
+                    <div class="card-header">Outline Buttons</div>
                     <div class="card-body">
-                        <button class="btn btn-primary">Notification</button>
+                            <div class="buttons">
+                                <button type="button" class="btn btn-outline-primary"><i class="fas fa-check-circle"></i> Primary</button>
+                                <button type="button" class="btn btn-outline-secondary"><i class="fas fa-check-circle"></i> Secondary</button>
+                                <button type="button" class="btn btn-outline-success"><i class="fas fa-check-circle"></i> Success</button>
+                                <button type="button" class="btn btn-outline-danger"><i class="fas fa-check-circle"></i> Danger</button>
+                                <button type="button" class="btn btn-outline-warning"><i class="fas fa-check-circle"></i> Warning</button>
+                                <button type="button" class="btn btn-outline-info"><i class="fas fa-check-circle"></i> Info</button>
+                                <button type="button" class="btn btn-outline-light"><i class="fas fa-check-circle"></i> Light</button>
+                                <button type="button" class="btn btn-outline-dark"><i class="fas fa-check-circle"></i> Dark</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Button Size</div>
+                    <div class="card-body">
+                            <div class="buttons">
+                                <button type="button" class="btn btn-danger btn-sm ">Small</button>
+                                <button type="button" class="btn btn-primary ">Normal</button>
+                                <button type="button" class="btn btn-dark btn-lg">Large</button>
+                            </div>
                     </div>
                 </div>
             </div>

@@ -66,6 +66,11 @@ const routes = [
         name: 'components.progress',
         component: () => import('../views/Admin/ComponentProgress.vue'),
       },
+      {
+        path: '/table/basic',
+        name: 'table.basic',
+        component: () => import('../views/Admin/TableBasic.vue'),
+      },
     ],
   },
   { 

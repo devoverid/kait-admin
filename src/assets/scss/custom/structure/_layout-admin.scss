@@ -1,8 +1,13 @@
+body {
+    background-color: #F4F6F8;
+}
 #app {
-    @apply overflow-x-hidden
+    @apply overflow-x-hidden;
+
 }
 #content {
     padding-left: 270px;   
+    padding-bottom: 2rem;
     @apply w-full  min-h-screen;
 
     .main-content {
@@ -12,8 +17,12 @@
 .page-header h3 {
     @apply text-white text-4xl  mb-8;
 }
-a {
-    outline:0
+
+.section-title {
+    @apply mt-12 text-lg font-medium ml-4;
+}
+.section-description {
+    @apply text-gray-600 text-sm ml-4 mb-8;
 }
 @media screen and (max-width: 767px) {
     #content {

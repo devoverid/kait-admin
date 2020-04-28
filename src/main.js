@@ -5,7 +5,7 @@ import store from './store/store'
 import Waves from 'vue-waves-effect'
 import VuePageTransition from 'vue-page-transition'
 import '../node_modules/nprogress/nprogress.css'
-import './assets/css/styles.css'
+import './assets/scss/app.scss'
 
 Vue.config.productionTip = false
 Vue.use(Waves)

@@ -1,6 +1,7 @@
 .sidebar-wrapper {
     width: 270px;
-    @apply h-full min-h-screen shadow-lg fixed top-0 left-0 bg-white transition duration-500 overflow-x-auto;
+    z-index:2;
+    @apply h-full min-h-screen shadow-sm fixed top-0 left-0 bg-white transition duration-500 overflow-x-auto;
     .sidebar-header {
         @apply my-8;
         .logo {

@@ -1,0 +1,13 @@
+.media {
+    @apply flex p-5 px-8;
+
+    .media-title {
+        @apply font-medium text-base text-gray-700 mb-1;
+    }
+    .media-description {
+        @apply text-gray-600 text-xs tracking-wide;
+    }
+    &:not(:last-child) {
+        @apply border-b border-gray-200
+    }
+}

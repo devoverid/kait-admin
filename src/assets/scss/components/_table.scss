@@ -25,6 +25,20 @@
             }
         }
     }
+
+    &.table-hover {
+        tr {
+            &:not(:last-child) {
+                @apply border-b border-gray-300
+            }
+            &:hover {
+                @apply bg-gray-100;
+            }
+        }
+        td {
+            @apply px-5 py-4
+        }
+    }
 }
 
 
