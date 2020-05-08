@@ -11,13 +11,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">Table Striped 1</div>
-                    <div class="card-body">
-                        <p class="card-description">This is a description text. You can create, update, and delete users. <router-link :to="{name:'components'}">Alert</router-link></p>
+            <div class="col-md-6 col-12">
+                <kait-card>
+                    <kait-card-header>Table Striped</kait-card-header>
+                    <kait-card-body>
+                        <p class='mb-4'>Use <code>type="striped"</code> attribute to use striped style.</p>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <kait-table type='striped'>
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -25,7 +25,6 @@
                                         <th>Role</th>
                                         <th>Province</th>
                                         <th>Status</th>
-                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -34,38 +33,68 @@
                                         <td>Ahmad Saugi</td>
                                         <td>Superadmin</td>
                                         <td>DKI Jakarta</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td>
-                                            <button class="btn btn-warning"><i class='fas fa-edit'></i></button>
-                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                        </td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Muhammad Fauzan</td>
                                         <td>Member</td>
                                         <td>Jawa Barat</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td>
-                                            <button class="btn btn-warning"><i class='fas fa-edit'></i></button>
-                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                        </td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </kait-table>
                         </div>
-                    </div>
-                </div>
+                    </kait-card-body>
+                </kait-card>
+            </div>
+            <div class="col-md-6 col-12">
+                <kait-card>
+                    <kait-card-header>Table Hover</kait-card-header>
+                    <kait-card-body>
+                        <p class='mb-4'>Use <code>type="hover"</code> attribute to use hover style.</p>
+                        <div class="table-responsive">
+                            <kait-table type='hover'>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Role</th>
+                                        <th>Province</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ahmad Saugi</td>
+                                        <td>Superadmin</td>
+                                        <td>DKI Jakarta</td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Muhammad Fauzan</td>
+                                        <td>Member</td>
+                                        <td>Jawa Barat</td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
+                                    </tr>
+                                </tbody>
+                            </kait-table>
+                        </div>
+                    </kait-card-body>
+                </kait-card>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-12">
-                <div class="card">
-                    <div class="card-header">Table Striped 2</div>
-                    <div class="card-body">
-                        <p class="card-description">This is a description text. You can create, update, and delete users.</p>
+                <kait-card>
+                    <kait-card-header>Table Bordered</kait-card-header>
+                    <kait-card-body>
+                        <p class='mb-4'>Use <code>type="bordered"</code> attribute to use bordered style.</p>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <div class="table-responsive">
+                            <kait-table type='bordered'>
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -73,7 +102,6 @@
                                         <th>Role</th>
                                         <th>Province</th>
                                         <th>Status</th>
-                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -82,36 +110,30 @@
                                         <td>Ahmad Saugi</td>
                                         <td>Superadmin</td>
                                         <td>DKI Jakarta</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td>
-                                            <button class="btn btn-warning"><i class='fas fa-edit'></i></button>
-                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                        </td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Muhammad Fauzan</td>
                                         <td>Member</td>
                                         <td>Jawa Barat</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td>
-                                            <button class="btn btn-warning"><i class='fas fa-edit'></i></button>
-                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                        </td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </kait-table>
                         </div>
-                    </div>
-                </div>
+                        </div>
+                    </kait-card-body>
+                </kait-card>
             </div>
             <div class="col-md-6 col-12">
-                <div class="card">
-                    <div class="card-header">Table Striped 3</div>
-                    <div class="card-body">
-                        <p class="card-description">This is a description text. You can create, update, and delete users.</p>
+                <kait-card>
+                    <kait-card-header>No Border</kait-card-header>
+                    <kait-card-body>
+                        <p class='mb-4'>Use <code>type="no-border"</code> attribute to remove border.</p>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <div class="table-responsive">
+                            <kait-table type='no-border'>
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -119,7 +141,6 @@
                                         <th>Role</th>
                                         <th>Province</th>
                                         <th>Status</th>
-                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -128,28 +149,21 @@
                                         <td>Ahmad Saugi</td>
                                         <td>Superadmin</td>
                                         <td>DKI Jakarta</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td>
-                                            <button class="btn btn-warning"><i class='fas fa-edit'></i></button>
-                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                        </td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Muhammad Fauzan</td>
                                         <td>Member</td>
                                         <td>Jawa Barat</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td>
-                                            <button class="btn btn-warning"><i class='fas fa-edit'></i></button>
-                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                                        </td>
+                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </kait-table>
                         </div>
-                    </div>
-                </div>
+                        </div>
+                    </kait-card-body>
+                </kait-card>
             </div>
         </div>
     </div>

@@ -11,69 +11,69 @@
         </div>
         <div class="row">
            <div class="col-md-3 col-12">
-                <div class="card card-statistic">
+                <kait-card>
                     <div class="flex justify-between p-5 pb-0">
                         <div class="statistic">
-                            <h5>Users</h5>
-                            <h1>2,089</h1>
+                            <h5 class='text-gray-600 text-sm uppercase font-bold tracking-wider'>Users</h5>
+                            <h1 class='font-medium tracking-tighter mb-0'>2,089</h1>
                         </div>
                         <div class="percentage">
                             <h4 class='text-green-600'>+20%</h4>
                         </div>
                     </div>
                     <line-chart :height='100' :labels="lineChart1.labels" :data="lineChart1.data" :tooltip="lineChart1.tooltipText" :borderColor="lineChart1.borderColor"/>
-                </div>
+                </kait-card>
             </div>
             <div class="col-md-3 col-12">
-                <div class="card card-statistic">
+                <kait-card>
                     <div class="flex justify-between p-5 pb-0">
                         <div class="statistic">
-                            <h5>Exams</h5>
-                            <h1>13</h1>
+                            <h5 class='text-gray-600 text-sm uppercase font-bold tracking-wider'>Exams</h5>
+                            <h1 class='font-medium tracking-tighter mb-0'>13</h1>
                         </div>
                         <div class="percentage">
                             <h4 class='text-red-600'>-10%</h4>
                         </div>
                     </div>
                     <line-chart :height='100' :labels="lineChart2.labels" :data="lineChart2.data" :tooltip="lineChart2.tooltipText" :borderColor="lineChart2.borderColor"/>
-                </div>
+                </kait-card>
             </div>
             <div class="col-md-3 col-12">
-                <div class="card card-statistic">
+                <kait-card>
                     <div class="flex justify-between p-5 pb-0">
                         <div class="statistic">
-                            <h5>Ongoing Exam</h5>
-                            <h1>3</h1>
+                            <h5 class='text-gray-600 text-sm uppercase font-bold tracking-wider'>Ongoing Exam</h5>
+                            <h1 class='font-medium tracking-tighter mb-0'>3</h1>
                         </div>
                         <div class="percentage">
                             <h4 class='text-green-600'>+33%</h4>
                         </div>
                     </div>
                     <line-chart :height='100' :labels="lineChart3.labels" :data="lineChart3.data" :tooltip="lineChart3.tooltipText" :borderColor="lineChart3.borderColor"/>
-                </div>
+                </kait-card>
             </div>
             <div class="col-md-3 col-12">
-                <div class="card card-statistic">
+                <kait-card>
                     <div class="flex justify-between p-5 pb-0">
                         <div class="statistic">
-                            <h5>Online  Users</h5>
-                            <h1>524</h1>
+                            <h5 class='text-gray-600 text-sm uppercase font-bold tracking-wider'>Online  Users</h5>
+                            <h1 class='font-medium tracking-tighter mb-0'>524</h1>
                         </div>
                         <div class="percentage">
                             <h4 class='text-green-600'>+20%</h4>
                         </div>
                     </div>
                     <line-chart :height='100' :labels="lineChart4.labels" :data="lineChart4.data" :tooltip="lineChart4.tooltipText" :borderColor="lineChart4.borderColor"/>
-                </div>
+                </kait-card>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-12">
-                <div class="card">
-                    <div class="card-header">
+            <div class="col-xl-6 col-12">
+                <kait-card>
+                    <kait-card-header>
                         School
-                    </div>
-                    <div class="card-body">
+                    </kait-card-header>
+                    <kait-card-body>
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-6">
@@ -84,29 +84,29 @@
                                 <div class="legend" v-html="doughnutLegend"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </kait-card-body>
+                </kait-card>
             </div>
-            <div class="col-md-3 col-12">
-                <div class="card">
-                    <div class="card-header">
+            <div class="col-xl-3 col-12">
+                <kait-card>
+                    <kait-card-header>
                         To-do List
-                    </div>
-                    <div class="card-body no-pad" >
+                    </kait-card-header>
+                    <kait-card-body class='no-pad'>
                         <todo-list title="Initialize Server" icon="far fa-clock" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.." backgroundColor="rgba(46, 82, 254,.8)"/>
                         <todo-list title="Create an Exam" icon="fas fa-file" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.." backgroundColor="rgba(46, 82, 254,.8)"/>
                         <todo-list title="Import Data" icon="fas fa-download" desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.." backgroundColor="rgba(46, 82, 254,.8)"/>
-                    </div>
-                </div>
+                    </kait-card-body>                    
+                </kait-card>
             </div>
-            <div class="col-md-3 col-12">
-                <div class="card">
-                    <div class="card-header">
+            <div class="col-xl-3 col-12">
+                <kait-card>
+                    <kait-card-header>
                         Incoming Exam
-                    </div>
-                    <div class="card-body no-pad">
+                    </kait-card-header>
+                    <kait-card-body class='no-pad'>
                         <div class="table-responsive">
-                            <table class='table table-hover'>
+                            <kait-table type="hover">
                                 <tr>
                                     <td class='font-bold'>Math</td>
                                     <td>SMKN 10</td>
@@ -137,10 +137,10 @@
                                     <td>SMKN 10</td>
                                     <td><i class='far fa-clock'></i> 18h 54m 52s</td>
                                 </tr>
-                            </table>
+                            </kait-table>
                         </div>
-                    </div>
-                </div>
+                    </kait-card-body>
+                </kait-card>
             </div>
         </div>
         <div class="row">
@@ -182,10 +182,11 @@
     </div>
 </template>
 <script>
-import LineChart from './../../components/Chart/LineChart';
-import DoughnutChart from './../../components/Chart/DoughnutChart'
-import TodoList from './../../components/Admin/TodoList'
-import Avatar from './../../components/Admin/Avatar';
+import LineChart from './../../components/Vendor/Chart/LineChart';
+import DoughnutChart from './../../components/Vendor/Chart/DoughnutChart'
+import TodoList from './../../components/Misc/TodoList'
+import Avatar from './../../components/Misc/Avatar';
+
 export default {
     components: {
         LineChart, DoughnutChart, TodoList, Avatar

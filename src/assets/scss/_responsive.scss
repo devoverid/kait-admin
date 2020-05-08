@@ -11,6 +11,7 @@
 }
 
 
+
 .col-1 { @apply w-1/12 }
 .col-2 { @apply w-1/6 }
 .col-3 { @apply w-1/4 }
@@ -24,34 +25,20 @@
 .col-11 { @apply w-11/12 }
 .col-12 { @apply w-full }
 
-@screen xl {
-    .col-xl-1 { @apply w-1/12 }
-    .col-xl-2 { @apply w-1/6 }
-    .col-xl-3 { @apply w-1/4 }
-    .col-xl-4 { @apply w-1/3 }
-    .col-xl-5 { @apply w-5/12 }
-    .col-xl-6 { @apply w-1/2 }
-    .col-xl-7 { @apply w-7/12 }
-    .col-xl-8 { @apply w-2/3 }
-    .col-xl-9 { @apply w-3/4 }
-    .col-xl-10 { @apply w-5/6 }
-    .col-xl-11 { @apply w-11/12 }
-    .col-xl-12 { @apply w-full }
-}
-@media screen and (max-width: 1199px) {
-    .col-lg-1 { @apply w-1/12 }
-    .col-lg-2 { @apply w-1/6 }
-    .col-lg-3 { @apply w-1/4 }
-    .col-lg-4 { @apply w-1/3 }
-    .col-lg-5 { @apply w-5/12 }
-    .col-lg-6 { @apply w-1/2 }
-    .col-lg-7 { @apply w-7/12 }
-    .col-lg-8 { @apply w-2/3 }
-    .col-lg-9 { @apply w-3/4 }
-    .col-lg-10 { @apply w-5/6 }
-    .col-lg-11 { @apply w-11/12 }
-    .col-lg-12 { @apply w-full }
-}
+@screen sm {
+    .col-sm-1 { @apply w-1/12 }
+    .col-sm-2 { @apply w-1/6 }
+    .col-sm-3 { @apply w-1/4 }
+    .col-sm-4 { @apply w-1/3 }
+    .col-sm-5 { @apply w-5/12 }
+    .col-sm-6 { @apply w-1/2 }
+    .col-sm-7 { @apply w-7/12 }
+    .col-sm-8 { @apply w-2/3 }
+    .col-sm-9 { @apply w-3/4 }
+    .col-sm-10 { @apply w-5/6 }
+    .col-sm-11 { @apply w-11/12 }
+    .col-sm-12 { @apply w-full }
+} 
 @screen md {
     .col-md-1 { @apply w-1/12 }
     .col-md-2 { @apply w-1/6 }
@@ -66,19 +53,33 @@
     .col-md-11 { @apply w-11/12 }
     .col-md-12 { @apply w-full }
 }
-@screen sm {
-    .col-sm-1 { @apply w-1/12 }
-    .col-sm-2 { @apply w-1/6 }
-    .col-sm-3 { @apply w-1/4 }
-    .col-sm-4 { @apply w-1/3 }
-    .col-sm-5 { @apply w-5/12 }
-    .col-sm-6 { @apply w-1/2 }
-    .col-sm-7 { @apply w-7/12 }
-    .col-sm-8 { @apply w-2/3 }
-    .col-sm-9 { @apply w-3/4 }
-    .col-sm-10 { @apply w-5/6 }
-    .col-sm-11 { @apply w-11/12 }
-    .col-sm-12 { @apply w-full }
+@media screen and (min-width: 992px) {
+    .col-lg-1 { @apply w-1/12 }
+    .col-lg-2 { @apply w-1/6 }
+    .col-lg-3 { @apply w-1/4 }
+    .col-lg-4 { @apply w-1/3 }
+    .col-lg-5 { @apply w-5/12 }
+    .col-lg-6 { @apply w-1/2 }
+    .col-lg-7 { @apply w-7/12 }
+    .col-lg-8 { @apply w-2/3 }
+    .col-lg-9 { @apply w-3/4 }
+    .col-lg-10 { @apply w-5/6 }
+    .col-lg-11 { @apply w-11/12 }
+    .col-lg-12 { @apply w-full }
+}
+@media screen and (min-width: 1200px) {
+    .col-xl-1 { @apply w-1/12 }
+    .col-xl-2 { @apply w-1/6 }
+    .col-xl-3 { @apply w-1/4 }
+    .col-xl-4 { @apply w-1/3 }
+    .col-xl-5 { @apply w-5/12 }
+    .col-xl-6 { @apply w-1/2 }
+    .col-xl-7 { @apply w-7/12 }
+    .col-xl-8 { @apply w-2/3 }
+    .col-xl-9 { @apply w-3/4 }
+    .col-xl-10 { @apply w-5/6 }
+    .col-xl-11 { @apply w-11/12 }
+    .col-xl-12 { @apply w-full }
 }
 
 @media screen and (max-width: 767px) {

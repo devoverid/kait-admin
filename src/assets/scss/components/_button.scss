@@ -1,41 +1,37 @@
+@import './../variables.scss';
+
 .btn {
     @apply px-3 py-2 rounded-sm transition duration-200 font-medium text-sm;
-    i {
-        opacity: .8;
-        @apply mr-1;
-    }
+    
     &.btn-sm {
         @apply text-xs px-2 py-2;
     }
     &.btn-lg {
         @apply px-5 py-3;
     }
-    @each $color, $map in $buttons {
-        &.btn-#{$color} {
-            background: map-get($map, 'background-color'); 
-            box-shadow: map-get($map, "box-shadow");
-            &:active:hover, &:hover:not([disabled]) {
-                background: map-get($map, "background-color-hover"); 
-                box-shadow: map-get($map, "box-shadow-hover");
-            }
-            color: map-get($map, "color");
-        }
-    }
-    @each $color, $map in $outline-buttons {
-        &.btn-outline-#{$color} {
-            border: 1px solid map-get($map, "border");
-            color: map-get($map, "color");
-            &:active:hover, &:hover:not([disabled]) {
-                background: map-get($map, "hover-bg"); 
-                color: #fff;
-            }
-            color: map-get($map, "color");
-        }
-    }
-    
-    
 }
-
+@each $color, $map in $buttons {
+    &.btn-#{$color} {
+        background: map-get($map, 'background-color'); 
+        box-shadow: map-get($map, "box-shadow");
+        &:active:hover, &:hover:not([disabled]) {
+            background: map-get($map, "background-color-hover"); 
+            box-shadow: map-get($map, "box-shadow-hover");
+        }
+        color: map-get($map, "color");
+    }
+}
+@each $color, $map in $outline-buttons {
+    &.btn-outline-#{$color} {
+        border: 1px solid map-get($map, "border");
+        color: map-get($map, "color");
+        &:active:hover, &:hover:not([disabled]) {
+            background: map-get($map, "hover-bg"); 
+            color: #fff;
+        }
+        color: map-get($map, "color");
+    }
+}
 .buttons .btn {
     @apply mr-3 mb-2
 }

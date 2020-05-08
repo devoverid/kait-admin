@@ -1,46 +1,86 @@
 .table-responsive {
-    @apply w-full overflow-x-auto;
-}
-.table {
-    @apply w-full table-auto border-collapse;
-    
-    &.table-striped {
-        thead {
-            tr {
-                @apply border-t border-l border-r;
-                th {
-                    background-color: rgb(227, 232, 238);
-                    @apply text-left  px-4 py-2 text-gray-700 
+        @apply w-full overflow-x-auto;
+    }
+    .table {
+        &.table-striped {
+            thead {
+                tr {
+                    @apply border-t border-l border-r;
+                    th {
+                        background-color: rgb(227, 232, 238);
+                        @apply text-left  px-4 py-2 text-gray-700 
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        @apply border px-4 py-2 text-gray-700;
+                    }
+                    &:nth-child(odd) {
+                        @apply bg-gray-100
+                    }
                 }
             }
         }
-        tbody {
+
+        &.table-hover {
+            thead {
+                tr {
+                    @apply border-b ;
+                    th {
+                        @apply text-left  px-4 py-2 text-gray-700 
+                    }
+                }
+            }
             tr {
+                &:not(:last-child) {
+                    @apply border-b border-gray-300
+                }
+                &:hover {
+                    @apply bg-gray-100;
+                }
+            }
+            td {
+                @apply px-4 py-2
+            }
+        }
+
+        &.table-bordered {
+            thead {
+                tr {
+                    th {
+                        @apply text-left border px-4 py-2 text-gray-700 
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    &:not(:last-child) {
+                        @apply border-b border-gray-300
+                    }
+                    &:hover {
+                        @apply bg-gray-100;
+                    }
+                }
                 td {
-                    @apply border px-4 py-2 text-gray-700;
+                    @apply px-4 border py-2
                 }
-                &:nth-child(odd) {
-                    @apply bg-gray-100
+            }
+        }
+        &.table-no-border {
+            thead {
+                tr {
+                    th {
+                        @apply text-left  px-4 py-2 text-gray-700 
+                    }
+                }
+            }
+            tbody {
+                  
+                td {
+                    @apply px-4  py-2
                 }
             }
         }
     }
-
-    &.table-hover {
-        tr {
-            &:not(:last-child) {
-                @apply border-b border-gray-300
-            }
-            &:hover {
-                @apply bg-gray-100;
-            }
-        }
-        td {
-            @apply px-5 py-4
-        }
-    }
-}
-
-
-@media screen and (max-width: 767px) {
-}

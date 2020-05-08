@@ -19,7 +19,13 @@ h5, .h5 {
 h6, .h6 {
     @apply text-base
 }
+a {
+    @apply text-blue-600 transition duration-150;
+    &:hover {
+        @apply text-blue-800;
+    }
+}
 code {
-    @apply text-red-600;
+    @apply text-red-600 px-2;
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
 }

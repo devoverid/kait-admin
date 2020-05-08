@@ -1,4 +1,4 @@
-import sidebarItems from './../components/Admin/sidebar-items.json';
+import sidebarItems from './../components/Layout/sidebar-items.json';
 
 const state = {
     isSidebarActive: true,

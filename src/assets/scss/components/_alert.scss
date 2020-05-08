@@ -4,10 +4,6 @@
     .alert-title {
         @apply text-xl font-medium mb-2;
     }
-    &.alert-dismissable .close {
-        @apply  absolute right-0 top-0 bottom-0 px-4 font-bold text-lg;
-        color: rgba(255,255,255,.5)
-    }
     i {
         @apply mr-1 text-xs;
     }

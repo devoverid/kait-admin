@@ -28,20 +28,22 @@ Table of contents
 /* 2.1 Alert */
 @import './components/alert';
 /* 2.1 Card */
-@import './components/card';
+// @import './components/card';
 /* 2.2 Button */
-@import './components/button';
+// @import './components/button';
 /* 2.3 Table */
 @import './components/table';
 /* 2.4 Badge */
 @import './components/badge';
 @import './components/media';
+@import './components/progress';
 
 
 /* 3.1 Nprogress */
 @import './plugins/progress/nprogress';
 
 /* 4. Responsive */
-@import './responsive'
+@import './responsive';
 
-
+/* 5. Utilities */
+@import './utilities'

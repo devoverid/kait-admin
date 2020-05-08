@@ -12,8 +12,8 @@
 </template>
 <script>
 import '@/assets/scss/admin.scss';
-import KaitSidebar from '@/components/Admin/Sidebar.vue';
-import KaitNavbar from '@/components/Admin/Navbar.vue';
+import KaitSidebar from '@/components/Layout/KaitSidebar.vue';
+import KaitNavbar from '@/components/Layout/KaitNavbar.vue';
 
 export default {
     components: {

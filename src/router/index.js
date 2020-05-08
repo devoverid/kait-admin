@@ -12,7 +12,7 @@ const routes = [
       {
         path: '/',
         name: 'dashboard',
-        component: () => import('../views/Admin/Dashboard.vue'),
+        component: () => import('../views/Vertical/Dashboard.vue'),
         meta: {
           title: 'Dashboard - Kait Admin',
         },
@@ -20,15 +20,23 @@ const routes = [
       {
         path: '/components/alert',
         name: 'components.alert',
-        component: () => import('../views/Admin/ComponentAlert.vue'),
+        component: () => import('../views/Vertical/ComponentAlert.vue'),
         meta: {
           title: 'Alert - Kait Admin',
         },
       },
       {
+        path: '/components/avatar',
+        name: 'components.avatar',
+        component: () => import('../views/Vertical/ComponentAvatar.vue'),
+        meta: {
+          title: 'Avatar - Kait Admin',
+        },
+      },
+      {
         path: '/components/buttons',
         name: 'components.buttons',
-        component: () => import('../views/Admin/ComponentButton.vue'),
+        component: () => import('../views/Vertical/ComponentButton.vue'),
         meta: {
           title: 'Buttons - Kait Admin',
         },
@@ -36,46 +44,59 @@ const routes = [
       {
         path: '/components/badge',
         name: 'components.badge',
-        component: () => import('../views/Admin/ComponentBadge.vue'),
+        component: () => import('../views/Vertical/ComponentBadge.vue'),
         meta: {
           title: 'Badge - Kait Admin',
         },
       },
       {
-        path: '/components/card',
-        name: 'components.card',
-        component: () => import('../views/Admin/ComponentCard.vue'),
+        path: '/components/breadcrumb',
+        name: 'components.breadcrumb',
+        component: () => import('../views/Vertical/ComponentBreadcrumb.vue'),
+        meta: {
+          title: 'Breadcrumb - Kait Admin',
+        },
       },
       {
-        path: '/components/form',
-        name: 'components.form',
-        component: () => import('../views/Admin/ComponentForm.vue'),
+        path: '/components/card',
+        name: 'components.card',
+        component: () => import('../views/Vertical/ComponentCard.vue'),
+      },
+      {
+        path: '/components/checkbox',
+        name: 'components.checkbox',
+        component: () => import('../views/Vertical/ComponentCheckbox.vue'),
+      },
+      {
+        path: '/components/input',
+        name: 'components.input',
+        component: () => import('../views/Vertical/ComponentInput.vue'),
       },
       {
         path: '/components/modal',
         name: 'components.modal',
-        component: () => import('../views/Admin/ComponentModal.vue'),
+        component: () => import('../views/Vertical/ComponentModal.vue'),
       },
       {
         path: '/components/pagination',
         name: 'components.pagination',
-        component: () => import('../views/Admin/ComponentPagination.vue'),
+        component: () => import('../views/Vertical/ComponentPagination.vue'),
       },
       {
         path: '/components/progress',
         name: 'components.progress',
-        component: () => import('../views/Admin/ComponentProgress.vue'),
+        component: () => import('../views/Vertical/ComponentProgress.vue'),
       },
       {
         path: '/table/basic',
         name: 'table.basic',
-        component: () => import('../views/Admin/TableBasic.vue'),
+        component: () => import('../views/Vertical/TableBasic.vue'),
       },
     ],
   },
   { 
     path: '*', 
-    component: () => import('../views/Admin/Error404.vue')
+    component: () => import('../views/Vertical/Error404.vue')
   },
 ]
 

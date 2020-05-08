@@ -7,7 +7,7 @@ $theme-colors: (
   'warning': #ff9f43,
   'info': #0abde3,
   'dark': #222f3e,
-  'light': #efefef,
+  'light': #edf2f7,
   'link': #2178d1
 );
 
@@ -191,3 +191,14 @@ $outline-buttons: (
 		"hover-bg": map-get($theme-colors, 'light'),
 	),
 );
+
+$progress: (
+	"primary": map-get($theme-colors, 'primary'),
+	"secondary": map-get($theme-colors, 'secondary'),
+	"warning": map-get($theme-colors, 'warning'),
+	"danger": map-get($theme-colors, 'danger'),
+	"success": map-get($theme-colors, 'success'),
+	"light": map-get($theme-colors, 'light'),
+	"dark": map-get($theme-colors, 'dark'),
+	"info": map-get($theme-colors, 'info'),
+)

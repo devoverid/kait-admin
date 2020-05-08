@@ -18,8 +18,16 @@
                 "url": "/components/alert"
             },
             {
+                "text": "Avatar",
+                "url": "/components/avatar"
+            },
+            {
                 "text": "Badge",
                 "url": "/components/badge"
+            },
+            {
+                "text": "Breadcrumb",
+                "url": "/components/breadcrumb"
             },
             {
                 "text": "Buttons",
@@ -30,16 +38,12 @@
                 "url": "/components/card"
             },
             {
-                "text": "Dropdown",
-                "url": "/components/dropdown"
+                "text": "Checkbox",
+                "url": "/components/checkbox"
             },
             {
-                "text": "Form",
-                "url": "/components/form"
-            },
-            {
-                "text": "List Group",
-                "url": "/components/list-group"
+                "text": "Input",
+                "url": "/components/input"
             },
             {
                 "text": "Modal",
@@ -52,6 +56,10 @@
             {
                 "text": "Progress",
                 "url": "/components/progress"
+            },
+            {
+                "text": "Radio",
+                "url": "/components/radio"
             }
         ]
     },
