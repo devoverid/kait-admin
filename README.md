@@ -1,25 +1,36 @@
 
-# KAIT - Frontend
+# KAIT-Admin
+A Free Vue.js + TailwindCSS Admin Dashboard Template.
+![KAIT Dashboard](src/assets/images/screenshot.png?raw=true "KAIT Dashboard")
 
-## Project setup
+## Installation
 ```
+git clone https://github.com/devoverid/kait-admin.git
+cd kait-admin
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## To-do List
+- Pages
+  - [x] Dashboard
+- Components
+  - [x] Alert
+  - [ ] Avatar
+  - [x] Badge
+  - [ ] Breadcrumb
+  - [x] Button
+  - [x] Card
+  - [ ] Input
+  - [ ] Pagination
+  - [x] Progress
+  - [x] Table
+  - [x] Alert
+- Error Pages
+  - [ ] 401
+  - [ ] 403
+  - [x] 404
+  - [ ] 500
+  
+  ## License
+  KAIT-Admin is under [MIT License](https://github.com/stisla/stisla/blob/master/LICENSE)
