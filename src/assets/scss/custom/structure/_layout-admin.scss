@@ -8,6 +8,7 @@ body {
 #content {
     padding-left: 270px;   
     padding-bottom: 2rem;
+    transition: all .5s;
     @apply w-full  min-h-screen;
 
     .main-content {

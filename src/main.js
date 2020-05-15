@@ -16,6 +16,7 @@ import KaitAlert from '@/components/Alert/KaitAlert.vue'
 import KaitBadge from '@/components/Badge/KaitBadge.vue'
 import KaitButton from '@/components/Button/KaitButton.vue'
 import KaitProgress from '@/components/Progress/KaitProgress.vue'
+import KaitInput from '@/components/Input/KaitInput.vue'
 
 Vue.component('kait-card', KaitCard)
 Vue.component('kait-card-header', KaitCardHeader)
@@ -26,6 +27,7 @@ Vue.component('kait-alert', KaitAlert)
 Vue.component('kait-badge', KaitBadge)
 Vue.component('kait-button', KaitButton)
 Vue.component('kait-progress', KaitProgress)
+Vue.component('kait-input', KaitInput)
 
 Vue.config.productionTip = false
 Vue.use(Waves)

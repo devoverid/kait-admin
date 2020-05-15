@@ -14,8 +14,19 @@
 export default {
     methods: {
         toggleSidebar() {
-                
+            this.$store.commit('TOGGLE_IS_SIDEBAR_ACTIVE', !this.isSidebarActive)
+            console.log(this.isSidebarActive)
         }
+    },
+    computed: {
+        isSidebarActive: {
+            get() {
+            return this.$store.state.isSidebarActive;
+            },
+            set(val) {
+            this.$store.commit('TOGGLE_IS_SIDEBAR_ACTIVE', val)
+            }
+        },
     }
 }
 </script>

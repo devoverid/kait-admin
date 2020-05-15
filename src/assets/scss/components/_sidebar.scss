@@ -1,7 +1,23 @@
 .sidebar-wrapper {
-    width: 270px;
     z-index:2;
-    @apply h-full min-h-screen shadow-sm fixed top-0 left-0 bg-white transition duration-500 overflow-x-auto;
+    transition: all .2s;
+    width: 270px;
+    @apply h-full min-h-screen shadow-sm fixed top-0 left-0 bg-white  duration-500  overflow-hidden;
+    &.is-sidebar-active {
+        left: 0;
+    }
+    //ini kenapa ya gw lihat sama aja soalnya, emang. layarnya keciill nerrr
+    //terus ini mau kamu apain
+    // mau tanya di fb , tapi gatau grup css yg jago apa
+    // coba jelasin dlu ke aku ini salahnya dimana , soalnya aku liat uinya sama aja
+    // susah jelasinnya. lewat telp aja kalo gak
+    //oke
+    &.is-sidebar-hidden {
+        left: -270px;
+    }
+    &.is-sidebar-hidden ~ #content {
+        padding-left: 0;
+    }
     .sidebar-header {
         @apply my-8;
         .logo {

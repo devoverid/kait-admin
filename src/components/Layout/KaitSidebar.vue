@@ -1,9 +1,9 @@
 <template>
-  <div class='sidebar-wrapper'>
+  <div :class="{'sidebar-wrapper':true, 'is-sidebar-active': isSidebarActive, 'is-sidebar-hidden': isSidebarActive==false}">
       <perfect-scrollbar>
         <div class="" id="sidebar">
             <div class="sidebar-header">
-                <div class="logo">
+                <div class="logo mx-auto">
                 <img src="@/assets/images/logo/type.svg" alt="">
                 </div>
             </div>
@@ -68,7 +68,7 @@ export default {
             return this.$store.state.isSidebarActive;
             },
             set(val) {
-            this.$store.commit('TOGGLE_IS_SIDEBAR_ACTIVE', val)
+                this.$store.commit('TOGGLE_IS_SIDEBAR_ACTIVE', val)
             }
         },
         isGroupActive() {
@@ -94,7 +94,6 @@ export default {
 }
 </script>
 <style>
-
 .ps {
   height: 100vh;
 }

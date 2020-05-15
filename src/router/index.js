@@ -92,7 +92,33 @@ const routes = [
         name: 'table.basic',
         component: () => import('../views/Vertical/TableBasic.vue'),
       },
+      {
+        path: '/form/advanced-form',
+        name: 'form.advanced',
+        component: () => import('../views/Vertical/FormAdvanced.vue'),
+      },
     ],
+  },
+  {
+    path: '/auth',
+    component: () => import('../views/Layouts/Auth.vue'),
+    children: [
+      {
+        path: 'login',
+        name: 'auth.login',
+        component: () => import('../views/Vertical/AuthLogin.vue')
+      },
+      {
+        path: 'register',
+        name: 'auth.register',
+        component: () => import('../views/Vertical/AuthRegister.vue')
+      },
+      {
+        path: 'forgot-password',
+        name: 'auth.forgotPassword',
+        component: () => import('../views/Vertical/AuthForgotPassword.vue')
+      },
+    ]
   },
   { 
     path: '*', 

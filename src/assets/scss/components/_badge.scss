@@ -1,3 +1,41 @@
+
+$badge: (
+	'primary': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'primary'),
+	),
+	'secondary': (
+		'color': #fff,
+		'background-color': #bec8d1,
+	),
+	'success': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'success'),
+	),
+	'danger': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'danger'),
+	),
+	'warning': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'warning'),
+	),
+	'info': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'info'),
+	),
+	'dark': (
+		'color': #fff,
+		'background-color': map-get($theme-colors, 'dark'),
+	),
+	'light': (
+		'color': #333,
+		'background-color': map-get($theme-colors, 'light'),
+	),
+);
+
+
+
 h1 .badge { @apply text-xl }
 h2 .badge { @apply text-lg }
 h3 .badge { @apply text-base }

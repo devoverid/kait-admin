@@ -13,3 +13,19 @@
 .w-94\/100 {
     width: 94%;
 }
+.w-3\/10 {
+    width: 30%;
+}
+.w-7\/10 {
+    width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+    .md\:w-3\/10 {
+        width: 30%;
+    }
+    .md\:w-7\/10 {
+        width: 70%;
+    }
+   
+}

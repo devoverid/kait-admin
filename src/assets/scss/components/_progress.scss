@@ -1,3 +1,15 @@
+
+
+$progress: (
+	"primary": map-get($theme-colors, 'primary'),
+	"secondary": map-get($theme-colors, 'secondary'),
+	"warning": map-get($theme-colors, 'warning'),
+	"danger": map-get($theme-colors, 'danger'),
+	"success": map-get($theme-colors, 'success'),
+	"light": map-get($theme-colors, 'light'),
+	"dark": map-get($theme-colors, 'dark'),
+	"info": map-get($theme-colors, 'info'),
+);
 .progress-bar-striped {
     background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
     background-size: .7rem .7rem;

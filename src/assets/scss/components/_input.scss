@@ -1,0 +1,50 @@
+
+@import "./../variables";
+
+@each $color, $value in $theme-colors {
+    
+    .kait-input-#{$color} {
+        .kait-input:focus {
+                box-shadow: 0 0px 5px rgba($value, .4);
+                border: 1px solid rgba($value, .8);
+        }
+        &.is-focus .kait-label {
+            color: $value;
+        }
+        &.is-label-placeholder .kait-input:focus + .kait-placeholder {
+            transform: translate(-3px,-230%) !important;
+            color: $value;
+            padding: 0;
+        }
+        &.is-input-icon .kait-input:focus ~ .kait-input-icon {
+            color: $value;
+            
+        }
+    } 
+}
+.kait-placeholder {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.kait-placeholder, .kait-label {
+    transition: all .2s;
+}
+.kait-input-wrapper.kait-input-placeholder .kait-input:focus + .kait-placeholder{
+    left: 5px
+}
+.kait-input-wrapper.is-label-placeholder .kait-placeholder.stick {
+    transform: translateY(-230%) !important;
+    padding: 0 3px;
+}
+.kait-input-icon {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.kait-input-wrapper.is-input-icon .kait-input {
+    padding-left: 2.2rem
+}
+.kait-input-wrapper.is-input-icon .kait-placeholder {
+    padding-left: 2.2rem
+}
