@@ -58,6 +58,10 @@
                 "url": "/components/progress"
             },
             {
+                "text": "Select",
+                "url": "/components/select"
+            },
+            {
                 "text": "Radio",
                 "url": "/components/radio"
             }
@@ -90,8 +94,8 @@
                 "url": "/table/basic"
             },
             {
-                "text": "DataTables",
-                "url": "/form/editor"
+                "text": "Advanced Table",
+                "url": "/table/advanced"
             }
         ]
     },
@@ -110,6 +114,10 @@
             {
                 "text": "Sweet Alert",
                 "url": "/modules/sweet-alert"
+            },
+            {
+                "text": "Vue Select",
+                "url": "/modules/vue-select"
             },
             {
                 "text": "Waves Effect",

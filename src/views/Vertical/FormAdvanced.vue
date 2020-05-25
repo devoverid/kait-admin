@@ -17,6 +17,7 @@
                     <kait-card-body>
                         <kait-input placeholder="Placeholder"/>
                         <kait-input placeholder="Disabled" disabled/>
+                        <kait-select placeholder="ogi" :options="['PHP','Javascript','NodeJS','Go','Rust']"></kait-select>
                     </kait-card-body>
                 </kait-card>
             </div>

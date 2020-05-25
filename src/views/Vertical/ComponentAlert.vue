@@ -30,14 +30,14 @@
                     <kait-card-header>Dismissable</kait-card-header>
                     <kait-card-body>
                         <p class='mb-4'>Use <code>dismissable="true"</code> attributes to activate dismissable button.</p>
-                        <kait-alert type='primary' dismissable='true'>This is a primary alert.</kait-alert>
-                        <kait-alert type='secondary' dismissable='true'>This is a secondary alert.</kait-alert>
-                        <kait-alert type='success' dismissable='true'>This is a success alert.</kait-alert>
-                        <kait-alert type='danger' dismissable='true'>This is a danger alert.</kait-alert>
-                        <kait-alert type='warning' dismissable='true'>This is a warning alert.</kait-alert>
-                        <kait-alert type='info' dismissable='true'>This is a info alert.</kait-alert>
-                        <kait-alert type='light' dismissable='true'>This is a light alert.</kait-alert>
-                        <kait-alert type='dark' dismissable='true'>This is a dark alert.</kait-alert>
+                        <kait-alert type='primary' :dismissable='true'>This is a primary alert.</kait-alert>
+                        <kait-alert type='secondary' :dismissable='true'>This is a secondary alert.</kait-alert>
+                        <kait-alert type='success' :dismissable='true'>This is a success alert.</kait-alert>
+                        <kait-alert type='danger' :dismissable='true'>This is a danger alert.</kait-alert>
+                        <kait-alert type='warning' :dismissable='true'>This is a warning alert.</kait-alert>
+                        <kait-alert type='info' :dismissable='true'>This is a info alert.</kait-alert>
+                        <kait-alert type='light' :dismissable='true'>This is a light alert.</kait-alert>
+                        <kait-alert type='dark' :dismissable='true'>This is a dark alert.</kait-alert>
                     </kait-card-body>
                 </kait-card>
             </div>
@@ -46,7 +46,7 @@
                     <kait-card-header>Title</kait-card-header>
                     <kait-card-body>
                         <p class='mb-4'>Use <code>title="your title"</code> attributes to add title.</p>
-                        <kait-alert type="primary" title="Primary" dismissable='true'>This is a primary alert.</kait-alert>
+                        <kait-alert type="primary" title="Primary">This is a primary alert.</kait-alert>
                         <kait-alert type="secondary" title="Secondary">This is a secondary alert.</kait-alert>
                         <kait-alert type="success" title="Success">This is a success alert.</kait-alert>
                         <kait-alert type="danger" title="Danger">This is a danger alert.</kait-alert>
@@ -95,10 +95,4 @@ export default {
 }
 </script>
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
 </style>

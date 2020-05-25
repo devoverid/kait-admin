@@ -3,7 +3,36 @@ import { Line } from 'vue-chartjs'
 
 export default {
   extends: Line,
-  props: ["labels","data","tooltip","borderColor"],
+  props: {
+    labels:{
+      required:false,
+      type:Array,
+    },
+    data:{
+      required:false,
+      type:Array,
+    },
+    tooltip: {
+      required: false,
+      type: String,
+    },
+    borderColor: {
+      required: false,
+      type: String,
+    },
+    backgroundColor: {
+      required: false,
+      type: String,
+    },
+    legend: {
+      required:false,
+      type: Boolean,
+      default:false,
+    },
+    legendPosition: {
+      required:false,
+    }
+  },
   mounted () {
     // Overwriting base render method with actual data.
     this.renderChart(
@@ -13,7 +42,7 @@ export default {
           {
             data: this.data,
             label: this.tooltip,
-            backgroundColor: 'transparent',
+            backgroundColor: this.backgroundColor ? this.backgroundColor : 'transparent',
             borderColor: this.borderColor,
             borderWidth: 3,
             borderCapStyle: 'round',
@@ -28,6 +57,7 @@ export default {
         ],
       },
       {
+        responsive:true,
         layout: {
           padding: {
             left: -10,
@@ -43,7 +73,8 @@ export default {
           cornerRadius:3,
         },
         legend: {
-          display: false,
+          display: this.legend,
+          position: this.legendPosition,
         },
         scales: {
           yAxes: [

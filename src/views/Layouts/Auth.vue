@@ -33,25 +33,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-    .slide-leave-active,
-    .slide-enter-active {
-    transition: .2s;
-    }
-    .slide-enter {
-        opacity: 0;
-        transform: translateX(-2%);
-    }
-    .slide-enter-to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-    .slide-leave {
-        opacity: 1;
-    }
-    .slide-leave-to {
-        opacity: 0;
-        transform: translateX(-2%);
-    }
+    
 
     .auth-menu {
         z-index: 999;

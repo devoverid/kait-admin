@@ -88,14 +88,39 @@ const routes = [
         component: () => import('../views/Vertical/ComponentProgress.vue'),
       },
       {
+        path: '/components/select',
+        name: 'components.select',
+        component: () => import('../views/Vertical/ComponentSelect.vue'),
+      },
+      {
         path: '/table/basic',
         name: 'table.basic',
         component: () => import('../views/Vertical/TableBasic.vue'),
       },
       {
+        path: '/table/advanced',
+        name: 'table.advanced',
+        component: () => import('../views/Vertical/TableAdvanced.vue'),
+      },
+      {
         path: '/form/advanced-form',
         name: 'form.advanced',
         component: () => import('../views/Vertical/FormAdvanced.vue'),
+      },
+      {
+        path: '/modules/sweet-alert2',
+        name: 'modules.sweet-alert2',
+        component: () => import('../views/Vertical/ModuleSweetAlert2.vue'),
+      },
+      {
+        path: '/modules/chartjs',
+        name: 'modules.chartjs',
+        component: () => import('../views/Vertical/ModuleChartJS.vue'),
+      },
+      {
+        path: '/modules/vue-select',
+        name: 'modules.vue-select',
+        component: () => import('../views/Vertical/ModuleVueSelect.vue'),
       },
     ],
   },

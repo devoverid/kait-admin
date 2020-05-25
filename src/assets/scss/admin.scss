@@ -41,7 +41,9 @@ Table of contents
 
 /* 3.1 Nprogress */
 @import './plugins/progress/nprogress';
+@import "vue-select/src/scss/vue-select.scss";
 
 /* 4. Responsive */
 @import './responsive';
 
+@import './custom/transitions'

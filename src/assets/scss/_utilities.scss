@@ -20,6 +20,18 @@
     width: 70%;
 }
 
+@each $color-name, $value in $theme-colors {
+    .bg-#{$color-name} {
+        background-color: $value;
+    }
+    .hover\:bg-#{$color-name}:hover {
+        background-color: $value;
+    }
+    .hover\:text-#{$color-name}:hover {
+        color: $value;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .md\:w-3\/10 {
         width: 30%;

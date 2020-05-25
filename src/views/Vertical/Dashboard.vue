@@ -232,22 +232,5 @@ export default {
 }
 </script>
 <style lang="scss">
-.legend {
-    @apply flex w-full;
-    align-self: center;
-    ul {
-        @apply w-full;
-        li {
-            @apply mb-3 w-full block text-base;
-            span {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 10px;;
-            }
-        }
-    }
-}
+    @import "@/assets/scss/plugins/chart/_chartjs";
 </style>

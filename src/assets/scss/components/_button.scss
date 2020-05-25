@@ -55,6 +55,13 @@ $buttons: (
 		"background-color-hover": #dedede,
 		"box-shadow": 1px 3px 8px rgba(220, 220, 220,.4),
 		"box-shadow-hover": 1px 3px 8px rgba(220, 220, 220,.7),
+	),
+	'transparent': (
+		"color": #222,
+		"background-color": transparent,
+		"background-color-hover": transparent,
+		"box-shadow": none,
+		"box-shadow-hover": none,
 	)
 );
 

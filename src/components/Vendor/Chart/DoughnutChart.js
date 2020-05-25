@@ -51,7 +51,7 @@ export default {
       }
     )
 
-        this.$store.state.doughnutLegend = this.generateLegend()
+        this.$store.commit('SET_DOUGHNUT_LEGEND', this.generateLegend());
         
         console.log(this.htmlLegend)
   },
