@@ -93,6 +93,11 @@ const routes = [
         component: () => import('../views/Vertical/ComponentSelect.vue'),
       },
       {
+        path: '/components/radio',
+        name: 'components.radio',
+        component: () => import('../views/Vertical/ComponentRadio.vue'),
+      },
+      {
         path: '/table/basic',
         name: 'table.basic',
         component: () => import('../views/Vertical/TableBasic.vue'),

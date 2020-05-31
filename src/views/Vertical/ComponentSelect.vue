@@ -60,10 +60,10 @@
                 <kait-card>
                     <kait-card-header>Color</kait-card-header>
                     <kait-card-body>
-                        <kait-select :options="['PHP','Javascript','Golang','Python','Ruby']" placeholder="Choose language" v-model="select2"  color="danger"></kait-select>
+                        <kait-select :options="colors" placeholder="Choose color" v-model="color"  :color="color"></kait-select>
                     </kait-card-body>
                     <kait-card-footer>
-                        You choosed: {{select2}}
+                        You choosed: {{color}}
                     </kait-card-footer>
                 </kait-card>
             </div>
@@ -80,6 +80,8 @@ export default {
             select1: '',
             select2: [],
             select3: [],
+            colors: ['primary','dark','warning','danger','success'],
+            color: 'primary',
             selectedAjax: ''
             }
     },

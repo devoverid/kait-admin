@@ -38,6 +38,10 @@ export default {
     name: 'KaitSidebar',
     components: {
         PerfectScrollbar
+    },  
+    mounted() {
+        console.log("test resize")
+        this.handleResize();
     },
     data() {
         return {
@@ -47,6 +51,10 @@ export default {
                 wheelSpeed: 1,      
                 swipeEasing: true,
                 wheelPropagation: false,
+            },
+            window: {
+                width: 0,
+                height: 0
             }
         }
     },
@@ -60,6 +68,13 @@ export default {
         toggleSubmenu(index) {
             this.$set(this.sidebarItems[index], 'active',!this.sidebarItems[index].active)
             console.log(this.sidebarItems[index].text)
+        },
+        handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+            if(this.window.width < 992) {
+                this.$store.commit("TOGGLE_IS_SIDEBAR_ACTIVE", false);
+            }
         }
     },
     computed: {
