@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-lg border border-gray-100 rounded-md  mb-4 bg-white">
+    <div class="kait-card shadow-lg border border-gray-100 rounded-md  mb-4 bg-white">
         <slot></slot>
     </div>
 </template>

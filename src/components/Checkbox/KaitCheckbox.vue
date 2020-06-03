@@ -1,8 +1,8 @@
 <template>
     <div class='kait-component'>
-        <div class="kait-checkbox">
-            <label class="flex py-1 items-center">
-                <input type="checkbox" :name="name" :id="name" @change="handleChange()" v-model="checkbox">
+        <div :class="{'kait-checkbox':true, [`kait-checkbox-${color}`]:true}">
+            <label :class="{'flex py-1 items-center':true, 'cursor-not-allowed':disabled}">
+                <input type="checkbox" :name="name" :id="name" @change="handleChange()" v-model="checkbox" :disabled="disabled" class='kait-input-checkbox'>
                 <span class='ml-2'>{{label}}</span>
             </label>
         </div>
@@ -11,6 +11,9 @@
 <script>
 export default {
     mounted() {
+        if(typeof this.value == 'boolean') {
+            this.checkbox = this.value;
+        }
     },
     props: {
         id: {
@@ -20,6 +23,10 @@ export default {
         autofocus: {
             type: Boolean,
             default: false,
+        },
+        color: {
+            type: String,
+            default: 'primary'
         },
         label: {
             type: String,

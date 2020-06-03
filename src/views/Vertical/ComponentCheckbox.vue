@@ -17,9 +17,25 @@
                         <kait-checkbox name="checkbox1" v-model="checkBox1" val="Vue" label="Vue"></kait-checkbox>
                         <kait-checkbox name="checkbox1" v-model="checkBox1" val="React" label="React"></kait-checkbox>
                         <kait-checkbox name="checkbox1" v-model="checkBox1" val="Angular" label="Angular"></kait-checkbox>
+                        <kait-checkbox name="checkbox1" disabled val="disabled" label="Disabled"></kait-checkbox>
                     </kait-card-body>
                     <kait-card-footer>
                         You choosed:  {{checkBox1}}
+                    </kait-card-footer>
+                </kait-card>
+            </div>
+            <div class="col-md-6 col-12">
+                <kait-card>
+                    <kait-card-header>Color</kait-card-header>
+                    <kait-card-body>
+                        <kait-checkbox name="checkboxColor" v-model="checkboxColor.primary" color="primary" val="primary" label="Primary"></kait-checkbox>
+                        <kait-checkbox name="checkboxColor" v-model="checkboxColor.secondary" color="secondary" val="secondary" label="Secondary"></kait-checkbox>
+                        <kait-checkbox name="checkboxColor" v-model="checkboxColor.success" color="success" val="success" label="Success"></kait-checkbox>
+                        <kait-checkbox name="checkboxColor" v-model="checkboxColor.warning" color="warning" val="warning" label="Warning"></kait-checkbox>
+                        <kait-checkbox name="checkboxColor" v-model="checkboxColor.danger" color="danger" val="danger" label="Danger"></kait-checkbox>
+                        <kait-checkbox name="checkboxColor" v-model="checkboxColor.dark" color="dark" val="dark" label="Dark"></kait-checkbox>
+                    </kait-card-body>
+                    <kait-card-footer>
                     </kait-card-footer>
                 </kait-card>
             </div>
@@ -34,13 +50,17 @@ export default {
     data() {
         return {
             checkBox1: [],
+            checkboxColor: {
+                primary: true,
+                secondary: true,
+                warning: true,
+                danger: true,
+                success: true,
+                dark: true,
+            }
         }
     },
     methods: {
-        openModal() {
-            this.modalBasicOpen = true;
-            console.log(this.modalBasicOpen)
-        }
     }
 }
 </script>

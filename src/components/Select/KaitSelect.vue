@@ -12,6 +12,7 @@
                 :searchable="true"
                 :filterable="filterable"
                 @search="onSearch"
+                :disabled="disabled"
                >
                 <template slot="no-options">
                     <slot name="no-options"></slot>
@@ -42,6 +43,11 @@ export default {
         label: {
             required: false,
             type: String,
+        },
+        disabled: {
+            required: false,
+            type: Boolean,
+            default: false,
         },
         options: {
             required: false,

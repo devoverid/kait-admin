@@ -16,6 +16,7 @@
                     <kait-card-header>Basic Usage</kait-card-header>
                     <kait-card-body>
                         <kait-select :options="['PHP','Javascript','Golang','Python','Ruby']" placeholder="Choose language" v-model="select1"></kait-select>
+                        <kait-select :options="['PHP','Javascript','Golang','Python','Ruby']" placeholder="Disabled" disabled class='mt-4'></kait-select>
                     </kait-card-body>
                     <kait-card-footer>
                         You choosed: {{select1}}

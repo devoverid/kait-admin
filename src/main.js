@@ -8,7 +8,10 @@ import Waves from 'vue-waves-effect'
 import VuePageTransition from 'vue-page-transition'
 import '../node_modules/nprogress/nprogress.css'
 import './assets/scss/app.scss'
+import CKEditor from '@ckeditor/ckeditor5-vue';
+
 // Components
+import KaitAvatar from './components/Avatar/KaitAvatar.vue'
 import KaitCard from './components/Card/KaitCard.vue'
 import KaitCardHeader from './components/Card/KaitCardHeader.vue'
 import KaitCardBody from './components/Card/KaitCardBody.vue'
@@ -26,6 +29,7 @@ import KaitRadio from './components/Radio/KaitRadio.vue'
 import KaitSelect from './components/Select/KaitSelect.vue'
 
 
+Vue.component('kait-avatar', KaitAvatar)
 Vue.component('kait-card', KaitCard)
 Vue.component('kait-card-header', KaitCardHeader)
 Vue.component('kait-card-body', KaitCardBody)
@@ -45,6 +49,7 @@ Vue.component('kait-select', KaitSelect)
 Vue.config.productionTip = false
 Vue.use(Waves)
 Vue.use(VuePageTransition)
+Vue.use(CKEditor);
 
 new Vue({
   router,
