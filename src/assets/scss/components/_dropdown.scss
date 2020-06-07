@@ -1,0 +1,17 @@
+.kait-dropdown {
+    // transform: translate3d(0px, 38px, 0px);
+    top: 38px;
+    min-width: 10rem;
+    transition: all .2s;
+}
+.kait-dropdown-item {
+    display: block;
+    width: 100%;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}

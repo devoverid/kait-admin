@@ -17,6 +17,8 @@ import KaitCardHeader from './components/Card/KaitCardHeader.vue'
 import KaitCardBody from './components/Card/KaitCardBody.vue'
 import KaitCardFooter from './components/Card/KaitCardFooter.vue'
 import KaitCheckbox from './components/Checkbox/KaitCheckbox.vue'
+import KaitDropdown from './components/Dropdown/KaitDropdown.vue'
+import KaitDropdownItem from './components/Dropdown/KaitDropdownItem.vue'
 import KaitTable from './components/Table/KaitTable.vue'
 import KaitAlert from './components/Alert/KaitAlert.vue'
 import KaitBadge from './components/Badge/KaitBadge.vue'
@@ -35,6 +37,8 @@ Vue.component('kait-card-header', KaitCardHeader)
 Vue.component('kait-card-body', KaitCardBody)
 Vue.component('kait-card-footer', KaitCardFooter)
 Vue.component('kait-checkbox', KaitCheckbox)
+Vue.component('kait-dropdown', KaitDropdown)
+Vue.component('kait-dropdown-item', KaitDropdownItem)
 Vue.component('kait-table', KaitTable)
 Vue.component('kait-alert', KaitAlert)
 Vue.component('kait-badge', KaitBadge)

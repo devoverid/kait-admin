@@ -42,6 +42,10 @@
                 "url": "/components/checkbox"
             },
             {
+                "text": "Dropdown",
+                "url": "/components/dropdown"
+            },
+            {
                 "text": "Input",
                 "url": "/components/input"
             },

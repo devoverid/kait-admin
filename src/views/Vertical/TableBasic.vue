@@ -93,7 +93,6 @@
                     <kait-card-body>
                         <p class='mb-4'>Use <code>type="bordered"</code> attribute to use bordered style.</p>
                         <div class="table-responsive">
-                            <div class="table-responsive">
                             <kait-table type='bordered'>
                                 <thead>
                                     <tr>
@@ -122,7 +121,6 @@
                                 </tbody>
                             </kait-table>
                         </div>
-                        </div>
                     </kait-card-body>
                 </kait-card>
             </div>
@@ -132,7 +130,6 @@
                     <kait-card-body>
                         <p class='mb-4'>Use <code>type="no-border"</code> attribute to remove border.</p>
                         <div class="table-responsive">
-                            <div class="table-responsive">
                             <kait-table type='no-border'>
                                 <thead>
                                     <tr>
@@ -160,7 +157,6 @@
                                     </tr>
                                 </tbody>
                             </kait-table>
-                        </div>
                         </div>
                     </kait-card-body>
                 </kait-card>

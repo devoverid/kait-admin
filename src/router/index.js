@@ -68,6 +68,11 @@ const routes = [
         component: () => import('../views/Vertical/ComponentCheckbox.vue'),
       },
       {
+        path: '/components/dropdown',
+        name: 'components.dropdown',
+        component: () => import('../views/Vertical/ComponentDropdown.vue'),
+      },
+      {
         path: '/components/input',
         name: 'components.input',
         component: () => import('../views/Vertical/ComponentInput.vue'),

@@ -1,3 +1,8 @@
+// -------- Transition List -------------
+// 1. fade 
+// 2. slide-vertical
+// ---------------------------------------
+
 
 .fade-enter-active, .fade-leave-active {
     transition: opacity .5s;
@@ -5,7 +10,6 @@
 .fade-enter, .fade-leave-to  {
     opacity: 0;
 }
-
 .fade-slide-down-enter-active, .fade-slide-down-leave-active, {
     transition: all .5s;
 }
@@ -44,4 +48,25 @@ transition: .2s;
 .slide-leave-to {
     opacity: 0;
     transform: translateX(-2%);
+}
+
+.slide-vertical-leave-active,
+.slide-vertical-enter-active {
+    transition: all .2s ease;
+}
+.slide-vertical-enter {
+    max-height: 0;
+    padding: 0;
+}
+.slide-vertical-enter-to {
+    max-height: 100%;
+    @apply py-2
+}
+.slide-vertical-leave {
+    max-height: 100%;
+    @apply py-2
+}
+.slide-vertical-leave-to {
+    padding: 0;
+    max-height: 0;
 }

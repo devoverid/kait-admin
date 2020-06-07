@@ -104,79 +104,41 @@
                     <kait-card-header>
                         Incoming Exam
                     </kait-card-header>
-                    <kait-card-body class='no-pad'>
-                        <div class="table-responsive">
-                            <kait-table type="hover">
-                                <tr>
-                                    <td class='font-bold'>Math</td>
-                                    <td>SMKN 10</td>
-                                    <td><i class='far fa-clock'></i> 2h 10m 52s</td>
-                                </tr>
-                                <tr>
-                                    <td class='font-bold'>English</td>
-                                    <td>SMKN 26</td>
-                                    <td><i class='far fa-clock'></i> 4h 05m 10s</td>
-                                </tr>
-                                <tr>
-                                    <td class='font-bold'>B Indo</td>
-                                    <td>SMKN 10</td>
-                                    <td><i class='far fa-clock'></i> 6h 02m 52s</td>
-                                </tr>
-                                <tr>
-                                    <td class='font-bold'>Science</td>
-                                    <td>SMKN 10</td>
-                                    <td><i class='far fa-clock'></i> 18h 54m 52s</td>
-                                </tr>
-                                <tr>
-                                    <td class='font-bold'>PKN</td>
-                                    <td>SMKN 10</td>
-                                    <td><i class='far fa-clock'></i> 18h 54m 52s</td>
-                                </tr>
-                                <tr>
-                                    <td class='font-bold'>IPS</td>
-                                    <td>SMKN 10</td>
-                                    <td><i class='far fa-clock'></i> 18h 54m 52s</td>
-                                </tr>
-                            </kait-table>
-                        </div>
+                    <kait-card-body class='no-pad' :responsive="true">
+                        <kait-table type="hover">
+                            <tr>
+                                <td class='font-bold'>Math</td>
+                                <td>SMKN 10</td>
+                                <td><i class='far fa-clock'></i> 2h 10m 52s</td>
+                            </tr>
+                            <tr>
+                                <td class='font-bold'>English</td>
+                                <td>SMKN 26</td>
+                                <td><i class='far fa-clock'></i> 4h 05m 10s</td>
+                            </tr>
+                            <tr>
+                                <td class='font-bold'>B Indo</td>
+                                <td>SMKN 10</td>
+                                <td><i class='far fa-clock'></i> 6h 02m 52s</td>
+                            </tr>
+                            <tr>
+                                <td class='font-bold'>Science</td>
+                                <td>SMKN 10</td>
+                                <td><i class='far fa-clock'></i> 18h 54m 52s</td>
+                            </tr>
+                            <tr>
+                                <td class='font-bold'>PKN</td>
+                                <td>SMKN 10</td>
+                                <td><i class='far fa-clock'></i> 18h 54m 52s</td>
+                            </tr>
+                            <tr>
+                                <td class='font-bold'>IPS</td>
+                                <td>SMKN 10</td>
+                                <td><i class='far fa-clock'></i> 18h 54m 52s</td>
+                            </tr>
+                        </kait-table>
                     </kait-card-body>
                 </kait-card>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-12"></div>
-            <div class="col-md-4 col-12">
-                <div class="card">
-                    <div class="card-header">Recent Activities</div>
-                    <div class="card-body no-pad">
-                        <ul>
-                            <li class='media'>
-                                <avatar :src="require(`@/assets/images/avatar/avatar-s-23.png`)" size="large" class='mr-4'></avatar>
-                                <div class="media-body">
-                                    <div class="float-right">12m</div>
-                                    <div class="media-title">Ahmad Saugi</div>
-                                    <span class="media-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui quisquam perferendis ex officiis aspernatur</span>
-                                </div>
-                            </li>
-                            <li class='media'>
-                                <avatar :src="require(`@/assets/images/avatar/avatar-s-8.png`)" size="large" class='mr-4'></avatar>
-                                <div class="media-body">
-                                    <div class="float-right">12m</div>
-                                    <div class="media-title">Sharen Alicia</div>
-                                    <span class="media-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui quisquam perferendis ex officiis aspernatur</span>
-                                </div>
-                            </li>
-                            <li class='media'>
-                                <avatar :src="require(`@/assets/images/avatar/avatar-s-23.png`)" size="large" class='mr-4'></avatar>
-                                <div class="media-body">
-                                    <div class="float-right">12m</div>
-                                    <div class="media-title">Bingung Gue</div>
-                                    <span class="media-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui quisquam perferendis ex officiis aspernatur</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -185,11 +147,10 @@
 import LineChart from './../../components/Vendor/Chart/LineChart';
 import DoughnutChart from './../../components/Vendor/Chart/DoughnutChart'
 import TodoList from './../../components/Misc/TodoList'
-import Avatar from './../../components/Misc/Avatar';
 
 export default {
     components: {
-        LineChart, DoughnutChart, TodoList, Avatar
+        LineChart, DoughnutChart, TodoList
     },
     data() {
         return {
