@@ -1,0 +1,35 @@
+.card {
+    .card-title {
+        @apply font-bold text-xl mb-2
+    }
+    .card-description {
+        @apply bg-white  text-gray-600 tracking-wide mb-4;
+    }
+    .card-footer {
+        @apply px-5 py-4 text-sm text-gray-700 bg-white;
+        &.bg-whitesmoke {
+            @apply bg-gray-100;
+        }
+    }
+    
+    & + .card {
+        @apply mt-5
+    }
+    
+}
+.card-statistic {
+    @apply bg-white;
+    .statistic {
+        h5 {
+            @apply text-gray-600 text-sm uppercase font-bold tracking-wider;
+        }
+        h1 {
+            @apply  font-medium tracking-tighter mb-0;
+        }
+    }
+    .percentage {
+        h4 {
+            @apply font-medium;
+        }
+    }
+}

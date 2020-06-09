@@ -142,12 +142,24 @@
                 "url": "/auth/login"
             },
             {
+                "text": "Login V2",
+                "url": "/auth/login-v2"
+            },
+            {
                 "text": "Register",
                 "url": "/auth/register"
             },
             {
+                "text": "Register V2",
+                "url": "/auth/register-v2"
+            },
+            {
                 "text": "Forgot Password",
                 "url": "/auth/forgot-password"
+            },
+            {
+                "text": "Forgot Password V2",
+                "url": "/auth/forgot-password-v2"
             }
         ]
     },
@@ -172,10 +184,5 @@
                 "url": "/error/500"
             }
         ]
-    },
-    {
-        "text": "Settings",
-        "icon": "fas fa-cog",
-        "url": "/admin/exam"
     }
 ]

@@ -22,6 +22,10 @@ export default {
         animation: {
             type: String,
             default: "slide-down"
+        },
+        position: {
+            type: String,
+            default: 'left'
         }
     },
     methods: {

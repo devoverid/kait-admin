@@ -1,48 +1,26 @@
 <template>
-    <div>
-        <div class="title mt-24">
-            <h1 class='font-semibold text-gray-700'>Forgot Password</h1>
-            <p class='text-sm text-gray-600 tracking-wider'>Enter your email and we will send you reset password link</p>
-        </div>
-        <transition name='fade'>
-            <kait-alert :type="success===true?'success':'danger'" class='mt-4' v-if="success!== null">{{ success===true?successMsg:failedMsg }}</kait-alert>
-        </transition>
-        <form class='mt-4' @submit.prevent="success=true">
-            <kait-input type="text" label-placeholder="Email" v-model="inputUsername" class='mt-8'></kait-input>
-            <div class='mt-4'>
-                <kait-button type="submit" class='float-right ' color="primary">Submit</kait-button>
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="md:w-full px-5 lg:w-5/12 mx-auto">
+                <kait-card class='mt-32'>
+                    <kait-card-body class='py-12 px-8'>
+                        <img src="@/assets/images/logo/logo.png" alt="Kait Logo"  class="w-48">
+                        <h3 class='mt-12 text-4xl font-bold'>Forgot Password</h3>
+                        <p class='mb-8 text-normal'>Enter your email and we will send you a reset password link</p>
+                        <!-- <div class="w-24 h-1 bg-blue-600 mb-8"></div> -->
+                        <!-- <p>Before continuing, please log in to your account and start creating</p> -->
+                        <form>
+                            <kait-input label-placeholder="Email" icon="fas fa-envelope"/>
+                            <div class="overflow-hidden mt-8">
+                                <kait-button color="primary" class='float-right'>Submit</kait-button>
+                            </div>
+
+                            <p class='text-center mt-8'>Already have an account? <router-link to="/auth/login">Sign in.</router-link></p>
+                        </form>
+                    </kait-card-body>
+                </kait-card>
+                <p class='text-white text-center mt-8'>Copyright &copy; 2020 Komunitas IT Mengajar</p>
             </div>
-        </form>
-        
+        </div>
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            inputEmail: '',
-            success: null,
-            successMsg: "Please check your email and follow the link to reset password",
-        }
-    },
-    methods: {
-        login() {
-            if(this.inputUsername == this.username && this.inputPassword == this.password) {
-                this.success = true;
-
-                setTimeout(() => {
-                    this.$router.push("/")
-                }, 2000);
-            }else{
-                this.success = false;
-            }
-        }
-    }
-
-}
-</script>
-<style lang="scss">
-    .logo img {
-        height: 50px;
-    }
-</style>

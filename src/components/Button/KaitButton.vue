@@ -4,7 +4,7 @@
         [`btn-${color}`]:  variant=='default',
         [`btn-outline-`+color]: variant=='outline',
         [`btn-${size}`]: size
-    }" @click="$emit('click')">
+    }" @click="$emit('click')" v-waves>
         <i :class="{[icon]:true, 'mr-1':true, 'opacity-8':true}" v-if="icon"></i>
         <slot/>
     </button>

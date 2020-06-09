@@ -1,69 +1,36 @@
 <template>
-    <div>
-        <div class="title mt-24">
-            <h1 class='font-semibold text-gray-700'>Sign up</h1>
-            <p class='text-sm text-gray-600 tracking-wider'>Please fill the form below to create an account.</p>
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="md:w-full px-5 lg:w-5/12 mx-auto">
+                <kait-card class='mt-32'>
+                    <kait-card-body class='py-12 px-8'>
+                        <img src="@/assets/images/logo/logo.png" alt="Kait Logo"  class="w-48">
+                        <h3 class='mt-12 text-4xl font-bold'>Sign Up</h3>
+                        <p class='mb-8 text-normal'>Complete the registration form to continue.</p>
+                        <!-- <div class="w-24 h-1 bg-blue-600 mb-8"></div> -->
+                        <!-- <p>Before continuing, please log in to your account and start creating</p> -->
+                        <form>
+                            <div class="flex">
+                                <div class="w-1/2 pr-2">
+                                    <kait-input label="First Name"/>
+                                </div>
+                                <div class="w-1/2 pl-2">
+                                    <kait-input label="Last Name"/>
+                                </div>
+                            </div>
+                            <kait-input label="Username" />
+                            <kait-input label="Password" />
+                            <kait-checkbox label="Remember Me" class='mt-2'></kait-checkbox>
+                            <div class="overflow-hidden mt-8">
+                                <kait-button color="primary" class='float-right'>Submit</kait-button>
+                            </div>
+
+                            <p class='text-center mt-8'>Already have an account? <router-link to="/auth/login">Sign in.</router-link></p>
+                        </form>
+                    </kait-card-body>
+                </kait-card>
+                <p class='text-white text-center mt-8'>Copyright &copy; 2020 Komunitas IT Mengajar</p>
+            </div>
         </div>
-        <transition name='fade'>
-        <kait-alert :type="success===true?'success':'danger'" class='mt-4' v-if="success!== null">{{ success===true?successMsg:failedMsg }}</kait-alert>
-        </transition>
-        <form class='mt-4' @submit.prevent="login">
-            <div class="flex">
-                <div class="w-1/2 pr-2">
-                    <kait-input type="text" label="First Name" v-model="inputUsername"></kait-input>
-                </div>
-                <div class="w-1/2 pl-2">
-                    <kait-input type="text" label="Last Name" v-model="inputUsername"></kait-input>
-                </div>
-            </div>
-            <kait-input type="text" label="Email" v-model="inputPassword"></kait-input>
-            <div class="flex">
-                <div class="w-1/2 pr-2">
-                    <kait-input type="password" label="Password" v-model="inputUsername"></kait-input>
-                </div>
-                <div class="w-1/2 pl-2">
-                    <kait-input type="password" label="Confirm Password" v-model="inputUsername"></kait-input>
-                </div>
-            </div>
-            <div class='mt-4'>
-                <router-link to="/auth/login" class='float-left clear-both text-sm'> Have an account?</router-link>
-                <kait-button type="submit" class='float-right ' color="primary">Submit</kait-button>
-            </div>
-        </form>
-        
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            inputUsername: '',
-            inputPassword: '',
-            username: 'admin',
-            password: 'admin',
-            success: null,
-            successMsg: "Login success. We will redirecting you in seconds",
-            failedMsg: "Login failed. Please check your credentials"
-        }
-    },
-    methods: {
-        login() {
-            if(this.inputUsername == this.username && this.inputPassword == this.password) {
-                this.success = true;
-
-                setTimeout(() => {
-                    this.$router.push("/")
-                }, 2000);
-            }else{
-                this.success = false;
-            }
-        }
-    }
-
-}
-</script>
-<style lang="scss">
-    .logo img {
-        height: 50px;
-    }
-</style>

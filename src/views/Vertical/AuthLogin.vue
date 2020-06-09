@@ -1,54 +1,28 @@
 <template>
-    <div>
-        <div class="title mt-24">
-            <h1 class='font-semibold text-gray-700'>Sign in</h1>
-            <p class='text-sm text-gray-600 tracking-wider'>You must sign in to continue to KAIT.</p>
-        </div>
-        <transition name='fade'>
-        <kait-alert :type="success===true?'success':'danger'" class='mt-4' v-if="success!== null">{{ success===true?successMsg:failedMsg }}</kait-alert>
-        </transition>
-        <form class='mt-4' @submit.prevent="login">
-            <kait-input type="text" label="Username" v-model="inputUsername"></kait-input>
-            <kait-input type="text" label="Password" v-model="inputPassword"></kait-input>
-            <div class='mt-4'>
-                <router-link to="/auth/forgot-password" class='float-left clear-both text-sm'> Forgot your password?</router-link>
-                <kait-button type="submit" class='float-right ' color="primary">Submit</kait-button>
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="md:w-full px-5 lg:w-5/12 mx-auto">
+                <kait-card class='mt-32'>
+                    <kait-card-body class='py-12 px-8'>
+                        <img src="@/assets/images/logo/logo.png" alt="Kait Logo"  class="w-48">
+                        <h3 class='mt-12 text-4xl font-bold'>Sign In</h3>
+                        <p class='mb-8 text-normal'>You must sign in before access to the main dashboard.</p>
+                        <!-- <div class="w-24 h-1 bg-blue-600 mb-8"></div> -->
+                        <!-- <p>Before continuing, please log in to your account and start creating</p> -->
+                        <form>
+                            <kait-input label-placeholder="Username" icon="fas fa-user"/>
+                            <kait-input type="password" label-placeholder="Password" icon="fas fa-lock" class='mt-4'/>
+                            <kait-checkbox label="Remember Me"></kait-checkbox>
+                            <div class="overflow-hidden mt-8">
+                                <kait-button color="primary" class='float-right'>Submit</kait-button>
+                            </div>
+
+                            <p class='text-center mt-8'>Don't have an account? <router-link to="/auth/register">Register now.</router-link></p>
+                        </form>
+                    </kait-card-body>
+                </kait-card>
+                <p class='text-white text-center mt-8'>Copyright &copy; 2020 Komunitas IT Mengajar</p>
             </div>
-        </form>
-        
+        </div>
     </div>
 </template>
-<script>
-export default {
-    data() {
-        return {
-            inputUsername: '',
-            inputPassword: '',
-            username: 'admin',
-            password: 'admin',
-            success: null,
-            successMsg: "Login success. We will redirecting you in seconds",
-            failedMsg: "Login failed. Please check your credentials"
-        }
-    },
-    methods: {
-        login() {
-            if(this.inputUsername == this.username && this.inputPassword == this.password) {
-                this.success = true;
-
-                setTimeout(() => {
-                    this.$router.push("/")
-                }, 2000);
-            }else{
-                this.success = false;
-            }
-        }
-    }
-
-}
-</script>
-<style lang="scss">
-    .logo img {
-        height: 50px;
-    }
-</style>

@@ -23,6 +23,8 @@
                             <h6>Example heading <kait-badge type="secondary">New</kait-badge></h6>
                     </kait-card-body>
                 </kait-card>
+            </div>
+            <div class="col-md-6 col-12">
                 <kait-card>
                     <kait-card-header>Variation</kait-card-header>
                     <kait-card-body>
@@ -36,14 +38,6 @@
                             <kait-badge type="light">Light</kait-badge>
                             <kait-badge type="dark">Dark</kait-badge>
                         </div>
-                    </kait-card-body>
-                </kait-card>
-            </div>
-            <div class="col-md-6 col-12">
-                <kait-card>
-                    <kait-card-header>Buttons</kait-card-header>
-                    <kait-card-body>
-                        <button class="btn btn-primary">Notification</button>
                     </kait-card-body>
                 </kait-card>
             </div>

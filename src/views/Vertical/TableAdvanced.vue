@@ -16,25 +16,28 @@
                     <kait-card-header>Pagination</kait-card-header>
                     <kait-card-body>
                         <div class="table-responsive">
-                            <kait-table type='striped' :paginate="true" :perPage="5">
+                            <kait-table type='striped' :paginate="true" :perPage="5" :data="users" :currentPage="currentPage" >
                                 <thead>
                                     <tr>
                                         <th>#</th>
                                         <th>Name</th>
-                                        <th>Role</th>
-                                        <th>Province</th>
+                                        <th>Username</th>
+                                        <th>Website</th>
+                                        <th>Phone</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr v-for="user in users" :key="user.id">
-                                        <td>1</td>
-                                        <td>Ahmad Saugi</td>
-                                        <td>Superadmin</td>
-                                        <td>DKI Jakarta</td>
-                                        <td><kait-badge type='success' size='small'>Active</kait-badge></td>
-                                    </tr>
-                                </tbody>
+                                <template v-slot:row="user">
+                                    <td>{{user.data.id}}</td>
+                                    <td>{{user.data.name}}</td>
+                                    <td>{{user.data.username}}</td>
+                                    <td>{{user.data.website}}</td>
+                                    <td>{{user.data.phone}}</td>
+                                    <td><kait-badge type='success' size='small'>Active</kait-badge></td>
+                                </template>
+                                <template  v-slot:pagination="{totalPage}">
+                                    <kait-pagination :total="totalPage" v-model="currentPage" class='mt-3 float-right'></kait-pagination>
+                                </template>
                             </kait-table>
                         </div>
                     </kait-card-body>
@@ -49,6 +52,7 @@ import 'vue-waves-effect/dist/vueWavesEffect.css'
 export default {
     data() {
         return {
+            currentPage: 1,
             users: [
                 {
                     "id": 1,

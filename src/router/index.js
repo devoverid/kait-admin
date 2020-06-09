@@ -140,6 +140,32 @@ const routes = [
     ],
   },
   {
+    path: '/error',
+    component: () => import('../views/Layouts/Error.vue'),
+    children: [
+      {
+        path: '401',
+        name: 'error.401',
+        component: () => import('../views/Vertical/Error401.vue'),
+      },
+      {
+        path: '403',
+        name: 'error.403',
+        component: () => import('../views/Vertical/Error403.vue'),
+      },
+      {
+        path: '404',
+        name: 'error.404',
+        component: () => import('../views/Vertical/Error404.vue'),
+      },
+      {
+        path: '500',
+        name: 'error.500',
+        component: () => import('../views/Vertical/Error500.vue'),
+      },
+    ]
+  },
+  {
     path: '/auth',
     component: () => import('../views/Layouts/Auth.vue'),
     children: [
@@ -157,6 +183,27 @@ const routes = [
         path: 'forgot-password',
         name: 'auth.forgotPassword',
         component: () => import('../views/Vertical/AuthForgotPassword.vue')
+      },
+    ]
+  },
+  {
+    path: '/auth/v2',
+    component: () => import('../views/Layouts/AuthV2.vue'),
+    children: [
+      {
+        path: 'login',
+        name: 'auth.login.v2',
+        component: () => import('../views/Vertical/AuthLoginV2.vue')
+      },
+      {
+        path: 'register',
+        name: 'auth.register.v2',
+        component: () => import('../views/Vertical/AuthRegisterV2.vue')
+      },
+      {
+        path: 'forgot-password',
+        name: 'auth.forgotPassword.v2',
+        component: () => import('../views/Vertical/AuthForgotPasswordV2.vue')
       },
     ]
   },
@@ -184,37 +231,24 @@ router.afterEach((to, from) => {
   NProgress.done()
 })
 router.beforeEach((to, from, next) => {
-  // This goes through the matched routes from last to first, finding the closest route with a title.
-  // eg. if we have /some/deep/nested/route and /some, /deep, and /nested have titles, nested's will be chosen.
   const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title);
-
-  // Find the nearest route element with meta tags.
   const nearestWithMeta = to.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
   const previousNearestWithMeta = from.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
-
-  // If a route with a title was found, set the document (page) title to that value.
+  
   if (nearestWithTitle) document.title = nearestWithTitle.meta.title;
-
-  // Remove any stale meta tags from the document using the key attribute we set below.
+  
   Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
-
-  // Skip rendering meta tags if there are none.
   if (!nearestWithMeta) return next();
-
-  // Turn the meta tag definitions into actual elements in the head.
+  
   nearestWithMeta.meta.metaTags.map(tagDef => {
     const tag = document.createElement('meta');
 
     Object.keys(tagDef).forEach(key => {
       tag.setAttribute(key, tagDef[key]);
     });
-
-    // We use this to track which meta tags we create, so we don't interfere with other ones.
     tag.setAttribute('data-vue-router-controlled', '');
-
     return tag;
   })
-    // Add the meta tags to the document head.
     .forEach(tag => document.head.appendChild(tag));
 
   next();

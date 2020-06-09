@@ -1,3 +1,25 @@
 .kait-modal-wrapper {
     z-index: 999
 }
+.modal-center {
+    justify-content: center;
+    align-items:center;
+}
+.modal-top-center {
+    justify-content: center;
+    .kait-modal-container {
+        display:flex;
+        justify-content: center;
+        .kait-modal {
+            top: 1rem;
+        }
+    }
+}
+.modal-top-left .kait-modal{
+    top: 1rem;
+    left: 1rem;
+}
+.modal-top-right .kait-modal {
+    top: 1rem;
+    right: 1rem;
+}

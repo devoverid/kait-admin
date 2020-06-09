@@ -40,7 +40,6 @@ export default {
         PerfectScrollbar
     },  
     mounted() {
-        console.log("test resize")
         this.handleResize();
     },
     data() {
@@ -60,9 +59,6 @@ export default {
     },
     created() {
         this.sidebarItems = this.sidebarItems.map(sidebarItem => ({...sidebarItem, active: false}))
-        // this.sidebarItems.forEach((sidebarItem) => {
-
-        // })
     },
     methods: {
         toggleSubmenu(index) {
