@@ -1,10 +1,10 @@
 <template>
-    <div class='kait-component flex relative z-10' >
+    <div :class="{'kait-component flex relative z-10':true, 'justify-start':position=='left','justify-end':position=='right'}">
         <div class="toggler">
             <slot name="toggler"></slot>
         </div>
         <transition :name="animation">
-            <div class="kait-dropdown border border-gray-200 absolute bg-white rounded-sm py-2 overflow-hidden"  v-show="value">
+            <div class="kait-dropdown border border-gray-200 absolute bg-white rounded-sm overflow-hidden"  v-show="value">
                 <slot name="dropdown"></slot>
             </div>
         </transition>
@@ -26,7 +26,7 @@ export default {
         position: {
             type: String,
             default: 'left'
-        }
+        },
     },
     methods: {
         

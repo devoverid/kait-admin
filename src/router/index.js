@@ -123,6 +123,11 @@ const routes = [
         component: () => import('../views/Vertical/ModuleChartJS.vue'),
       },
       {
+        path: '/pages/chat-app',
+        name: 'pages.chatapp',
+        component: () => import('../views/Vertical/PageChatApp.vue'),
+      },
+      {
         path: '/modules/vue-select',
         name: 'modules.vue-select',
         component: () => import('../views/Vertical/ModuleVueSelect.vue'),

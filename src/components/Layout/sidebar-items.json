@@ -82,10 +82,6 @@
             {
                 "text": "Editor",
                 "url": "/form/editor"
-            },
-            {
-                "text": "Validation",
-                "url": "/form/validation"
             }
         ]
     },
@@ -116,22 +112,20 @@
                 "url": "/modules/font-awesome"
             },
             {
-                "text": "Sweet Alert",
-                "url": "/modules/sweet-alert"
-            },
-            {
                 "text": "Vue Select",
                 "url": "/modules/vue-select"
-            },
-            {
-                "text": "Waves Effect",
-                "url": "/modules/waves"
             }
         ]
     },
     {
-        "type": "title",
-        "text": "Pages"
+        "text": "Pages",
+        "icon": "fas fa-file",
+        "submenu": [
+            {
+                "text": "Chat App",
+                "url": "/pages/chat-app"
+            }
+        ]
     },
     {
         "text": "Authentication",

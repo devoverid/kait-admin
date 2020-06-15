@@ -7,6 +7,7 @@
                 @blur="isFocus=false"
                 :disabled='disabled'
                 :type="type"
+                :value="value"
                 >
             <span :class="{'kait-placeholder absolute cursor-text select-none text-xs w-full px-3 pointer-events-none text-gray-600 duration-200':true, 'opacity-0': value!==''}">{{ placeholder }}</span>
             <i :class="{[icon]:true, 'kait-input-icon absolute px-2 border-r border-gray-400': true}" v-if="icon"></i>
@@ -18,6 +19,7 @@
                 @blur="isFocus=false"
                 :disabled='disabled'
                 :type="type"
+                :value="value"
                 >
             <span :class="{'kait-placeholder absolute cursor-text select-none text-xs w-full px-3 pointer-events-none text-gray-600 duration-200':true, 'stick': value!=='' }">{{ labelPlaceholder }}</span>
             <i :class="{[icon]:true, 'kait-input-icon absolute px-2 border-r border-gray-400': true}" v-if="icon"></i>
@@ -29,6 +31,7 @@
                 @focus="isFocus=true" 
                 @blur="isFocus=false"
                 :type="type"
+                :value="value"
                 >
             <i :class="{[icon]:true, 'kait-input-icon absolute px-2 border-r border-gray-400': true}" v-if="icon"></i>
         </div>

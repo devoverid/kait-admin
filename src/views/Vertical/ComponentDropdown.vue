@@ -20,9 +20,9 @@
                                 <kait-button @click="dropdownShow1=!dropdownShow1">Toggle Dropdown</kait-button>
                             </template>
                             <template v-slot:dropdown>
-                                <kait-dropdown-item url="#" @click="onDropdownClick()">Link 1</kait-dropdown-item>
-                                <kait-dropdown-item url="#" @click="onDropdownClick()">Link 2</kait-dropdown-item>
-                                <kait-dropdown-item url="#" @click="onDropdownClick()">Link 3</kait-dropdown-item>
+                                <kait-dropdown-item url="#">Link 1</kait-dropdown-item>
+                                <kait-dropdown-item url="#">Link 2</kait-dropdown-item>
+                                <kait-dropdown-item url="#">Link 3</kait-dropdown-item>
                             </template>
                         </kait-dropdown>
                     </kait-card-body>
@@ -40,9 +40,9 @@
                                 <kait-button @click="dropdownShow2=!dropdownShow2">Toggle Dropdown</kait-button>
                             </template>
                             <template v-slot:dropdown>
-                                <kait-dropdown-item url="#" @click="onDropdownClick()">Link 1</kait-dropdown-item>
-                                <kait-dropdown-item url="#" @click="onDropdownClick()">Link 2</kait-dropdown-item>
-                                <kait-dropdown-item url="#" @click="onDropdownClick()">Link 3</kait-dropdown-item>
+                                <kait-dropdown-item url="#">Link 1</kait-dropdown-item>
+                                <kait-dropdown-item url="#">Link 2</kait-dropdown-item>
+                                <kait-dropdown-item url="#">Link 3</kait-dropdown-item>
                             </template>
                         </kait-dropdown>
                     </kait-card-body>

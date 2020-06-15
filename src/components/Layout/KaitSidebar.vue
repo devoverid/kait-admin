@@ -1,10 +1,11 @@
 <template>
-  <div :class="{'sidebar-wrapper':true, 'is-sidebar-active': isSidebarActive, 'is-sidebar-hidden': isSidebarActive==false}">
+  <div :class="{'sidebar-wrapper relative':true, 'is-sidebar-active': isSidebarActive, 'is-sidebar-hidden': isSidebarActive==false}">
       <perfect-scrollbar>
         <div class="" id="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header ">
+                <button class="btn btn-transparent hide-sidebar absolute" @click="hideSidebar()"><i class="fas fa-times"></i></button>
                 <div class="logo mx-auto">
-                <img src="@/assets/images/logo/type.svg" alt="">
+                    <img src="@/assets/images/logo/type.svg" alt="">
                 </div>
             </div>
             <div class="sidebar-menu">
@@ -64,6 +65,9 @@ export default {
         toggleSubmenu(index) {
             this.$set(this.sidebarItems[index], 'active',!this.sidebarItems[index].active)
             console.log(this.sidebarItems[index].text)
+        },
+        hideSidebar() {
+            this.$store.commit('TOGGLE_IS_SIDEBAR_ACTIVE', false)
         },
         handleResize() {
             this.window.width = window.innerWidth;

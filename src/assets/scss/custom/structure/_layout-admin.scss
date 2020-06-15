@@ -25,6 +25,10 @@ body {
 .section-description {
     @apply text-gray-600 text-sm ml-4 mb-8;
 }
+.hide-sidebar {
+    top: 10px;
+    right: 10px;
+}
 @media screen and (max-width: 767px) {
     #content {
         @apply pl-0
