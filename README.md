@@ -1,5 +1,3 @@
-
-
 <h1 align="center">Kait-Admin</h1>
 
 <p align="center">
@@ -33,3 +31,5 @@ Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes you
 
 <br>
 
+## 📝 License
+- **KAIT-Admin is open-sourced software licensed under the MIT license.**
