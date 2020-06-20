@@ -35,7 +35,6 @@ Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes you
 Several quick start options are available:
 - Clone the repo: `https://github.com/devoverid/kait-admin.git`
 - Install [npm](https://www.npmjs.com) or [yarn](https://yarnpkg.com) first if you don't have it in your machine
-- Run the `yarn stisla-start` command to start using stisla !
 
 Read the [Getting started page](https://getstisla.com/docs) for information on the framework contents, templates and examples, and more.
 
@@ -52,7 +51,7 @@ Read the [Getting started page](https://getstisla.com/docs) for information on t
 KAIT-Admin is created by [Ahmad Saugi](http://ahmadsaugi.com/).
 
 ## 👥 Contributors
-KAIT-Admin is better because of the [contributors](https://github.com/stisla/stisla/graphs/contributors). Thank them too.
+KAIT-Admin is better because of the [contributors](https://github.com/devoverid/kait-admin/graphs/contributors). Thank them too.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
