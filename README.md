@@ -39,6 +39,15 @@ Several quick start options are available:
 
 Read the [Getting started page](https://getstisla.com/docs) for information on the framework contents, templates and examples, and more.
 
+## 📁 Instalation
+Follow the instructions down below :
+- Clone the repo: `https://github.com/devoverid/kait-admin.git`
+- For windows just type cd kait-admin
+- Run the `yarn install`
+- Then run the `yarn serve`
+
+Read the [Getting started page](https://getstisla.com/docs) for information on the framework contents, templates and examples, and more.
+
 ## 👨‍💻 Creator
 KAIT-Admin is created by [Ahmad Saugi](http://ahmadsaugi.com/).
 
@@ -60,6 +69,9 @@ KAIT-Admin is better because of the [contributors](https://github.com/stisla/sti
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+## 🤝 Contributing
+Want to help KAIT-Admin get better? Let's contribute and follow our [contribution guide](#).
 
 ## 📝 License
 - **KAIT-Admin is open-sourced software licensed under the MIT license.**
