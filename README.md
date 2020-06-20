@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://getstisla.com">
-    <img src="https://user-images.githubusercontent.com/46257169/85205526-0c14e500-b346-11ea-8d43-84088925b0f1.png" alt="Stisla logo" width="100" height="100">
-  </a>
-</p>
+
 
 <h1 align="center">Kait-Admin</h1>
 
