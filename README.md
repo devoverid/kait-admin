@@ -14,10 +14,14 @@ Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes you
   <img src="https://user-images.githubusercontent.com/46257169/85205857-2e0f6700-b348-11ea-9d71-0d19e288c48e.png" alt="Sublime's custom image"/>
 </p>
 
-
+<span align="center">
 
 [![](https://img.shields.io/github/issues/Syauqizaidan/Learnify?style=flat-square)](https://img.shields.io/github/issues/Syauqizaidan/Learnify?style=flat-square) ![](https://img.shields.io/github/stars/Syauqizaidan/Learnify?style=flat-square)
 ![](https://img.shields.io/github/forks/Syauqizaidan/Learnify?style=flat-square) ![](https://img.shields.io/github/license/Syauqizaidan/Learnify?style=flat-square)[![HitCount](http://hits.dwyl.com/syauqizaidan/https://githubcom/Syauqizaidan/Learnify.svg)](http://hits.dwyl.com/syauqizaidan/https://githubcom/Syauqizaidan/Learnify)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+</span>
+
+
 
 <p align="center">
 	
