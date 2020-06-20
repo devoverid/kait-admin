@@ -21,4 +21,19 @@ Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes you
 
 </span>
 
+<p align="center">
+  <a href="https://getstisla.com">Homepage</a>
+  •
+  <a href="https://getstisla.com/getting-started">Getting Started</a>
+  •
+  <a href="https://demo.getstisla.com" target="_new">Demo</a>
+  •
+  <a href="https://getstisla.com/docs">Documentation</a>
+  •
+  <a href="https://getstisla.com/blog">Blog</a>
+  •
+  <a href="https://getstisla.com/support">Issue</a>
+</p>
+
+<br>
 
