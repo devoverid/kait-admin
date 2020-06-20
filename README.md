@@ -22,9 +22,3 @@ Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes you
 </span>
 
 
-
-<p align="center">
-	
-<img align="center" src="http://ForTheBadge.com/images/badges/built-with-love.svg"> <img align="center" src="http://ForTheBadge.com/images/badges/uses-html.svg"> <img align="center" src="http://ForTheBadge.com/images/badges/makes-people-smile.svg"> <img align="center" src="http://ForTheBadge.com/images/badges/built-by-developers.svg">
-
-</p>
