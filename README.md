@@ -16,8 +16,8 @@ Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes you
 
 <span align="center">
 
-[![](https://img.shields.io/github/issues/Syauqizaidan/Learnify?style=flat-square)](https://img.shields.io/github/issues/Syauqizaidan/Learnify?style=flat-square) ![](https://img.shields.io/github/stars/Syauqizaidan/Learnify?style=flat-square)
-![](https://img.shields.io/github/forks/Syauqizaidan/Learnify?style=flat-square) ![](https://img.shields.io/github/license/Syauqizaidan/Learnify?style=flat-square)[![HitCount](http://hits.dwyl.com/syauqizaidan/https://githubcom/Syauqizaidan/Learnify.svg)](http://hits.dwyl.com/syauqizaidan/https://githubcom/Syauqizaidan/Learnify)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![](https://img.shields.io/github/issues/devoverid/kait-admin?style=flat-square)](https://img.shields.io/github/issues/devoverid/kait-admin?style=flat-square) ![](https://img.shields.io/github/stars/devoverid/kait-admin?style=flat-square)
+![](https://img.shields.io/github/forks/devoverid/kait-admin?style=flat-square) ![](https://img.shields.io/github/license/devoverid/kait-admin?style=flat-square)[![HitCount](http://hits.dwyl.com/syauqizaidan/https://githubcom/devoverid/kait-admin.svg)](http://hits.dwyl.com/syauqizaidan/https://githubcom/devoverid/kait-admin)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 </span>
 
