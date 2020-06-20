@@ -6,8 +6,8 @@
 
 <h1 align="center">Kait-Admin</h1>
 
-<p>
-  Stisla is a Free Bootstrap Admin Template which will help you to speed up your project and design your own dashboard UI. Users will love it.
+<p align="center">
+Kait-Admin is a Free VueJS & TailwindCSS Admin Dashboard Template that makes your project more beatifully designed and more organized.
 </p>
 
 ![screely-1591521897512](https://user-images.githubusercontent.com/46257169/83959623-f946de80-a876-11ea-88db-f677be8f22e7.png)
