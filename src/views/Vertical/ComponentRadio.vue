@@ -44,7 +44,7 @@
                         <kait-radio name="radio3" label="Square" val="square" v-model="radio3" shape="square"></kait-radio>
                     </kait-card-body>
                     <kait-card-footer>
-                        You choosed: {{radio1}}
+                        You choosed: {{radio3}}
                     </kait-card-footer>
                 </kait-card>
             </div>
