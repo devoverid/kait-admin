@@ -13,7 +13,7 @@
     "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nprogress": "^0.2.0",
     "tailwindcss": "^1.2.0",
     "vue": "^2.6.11",
